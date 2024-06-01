@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_standard_ecommerce_app/utils/theme/theme.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 
 void main() {

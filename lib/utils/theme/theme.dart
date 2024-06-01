@@ -1,42 +1,38 @@
-
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_standard_ecommerce_app/utils/theme/custom_themes/appbar_theme.dart';
+import 'package:flutter_standard_ecommerce_app/utils/theme/custom_themes/elevated_button_theme.dart';
+import 'package:flutter_standard_ecommerce_app/utils/theme/custom_themes/text_theme.dart';
 
 class TAppTheme{
   //make const private
   TAppTheme._();
 
+
+  //LIGHT THEME
   static ThemeData lightTheme = ThemeData(
-    
    brightness: Brightness.light,
    scaffoldBackgroundColor: Colors.white,
    colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
    primaryColor: Colors.blue,
-   useMaterial3: true,
-   
-   appBarTheme:  const  AppBarTheme(
-   backgroundColor: Color.fromARGB(255, 253, 183, 178), foregroundColor: Color.fromARGB(255, 255, 1, 77)),
+   useMaterial3: true,  
+   textTheme: TTextTheme.lightTextTheme,
+   elevatedButtonTheme: TElevatedButtonTheme.ligthElevatedButtonTheme,
+   appBarTheme: TAppBarTheme.lightAppBarTheme,
+  );
 
-    
-   textTheme: TextTheme(
-          //display
-            displaySmall: GoogleFonts.montserrat(fontSize: 11,fontWeight: FontWeight.w500, color: Colors.black),
-            //Body Small
-            bodySmall: GoogleFonts.montserrat(fontSize: 11,fontWeight: FontWeight.w400, color: Colors.black), 
-            //Body Medium
-            bodyMedium: GoogleFonts.montserrat(fontSize: 14, color: Colors.black, fontWeight: FontWeight.w500),
-            //Body Large
-            bodyLarge: GoogleFonts.aBeeZee(fontSize: 17,  fontWeight: FontWeight.w600, color: Colors.black),
-            //
-            titleMedium: GoogleFonts.aBeeZee(fontSize: 23, color: Colors.black , fontWeight: FontWeight.bold),
-            //
-            titleLarge: GoogleFonts.montserrat(fontSize: 28, color: Colors.white , fontWeight: FontWeight.w700),
-
-
-        ),
+  
+  //DARK THEME
+  static ThemeData darkTheme = ThemeData(
+   brightness: Brightness.dark,
+   scaffoldBackgroundColor: Colors.black,
+   colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+   primaryColor: Colors.blue,
+   useMaterial3: true,  
+   textTheme: TTextTheme.darkTextTheme,
+   elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
+   appBarTheme: TAppBarTheme.darkAppBarTheme
 
   );
-  static ThemeData darkTheme = ThemeData();
   
 
 
