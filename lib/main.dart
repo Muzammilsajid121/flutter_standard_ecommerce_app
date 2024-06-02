@@ -1,23 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_standard_ecommerce_app/utils/theme/theme.dart';
+import 'package:flutter_standard_ecommerce_app/my_app.dart';
 
 
 void main() {
   runApp(const MyApp());
+
+  //TODOS
+  
+  //add widgets bindings
+  //initialized loacal storage
+  //await native splash
+  //initialize firebase
+  //initialize authentication
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Ecommerce App',
-      debugShowCheckedModeBanner: false,
-  
-      themeMode: ThemeMode.system,
-      theme: TAppTheme.lightTheme,
-      darkTheme: TAppTheme.darkTheme,
-      home: const HomeScreen(),
-    );
-  }
-}
