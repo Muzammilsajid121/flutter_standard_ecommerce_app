@@ -83,7 +83,7 @@ class THelperFucntion {
     return MediaQuery.of(Get.context!).size.width;
   }
 
-  static String GetFormattedDate(DateTime date,
+  static String getFormattedDate(DateTime date,
       {String format = 'dd MM yyyy'}) {
     return DateFormat(format).format(date);
   }

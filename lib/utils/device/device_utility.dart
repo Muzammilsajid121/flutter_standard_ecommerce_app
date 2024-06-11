@@ -18,13 +18,13 @@ class TDeviceUtils {
   }
 
   static bool islondscaperOrientation(BuildContext context) {
-    final ViewInsets = View.of(context).viewInsets;
-    return ViewInsets.bottom == 0;
+    final viewInsets = View.of(context).viewInsets;
+    return viewInsets.bottom == 0;
   }
 
   static bool isPortroitOrientation(BuildContext context) {
-    final ViewInsets = View.of(context).viewInsets;
-    return ViewInsets.bottom != 0;
+    final viewInsets = View.of(context).viewInsets;
+    return viewInsets.bottom != 0;
   }
 
   static void getFullScreen(bool enable) {
@@ -62,8 +62,8 @@ class TDeviceUtils {
   }
 
   static Future<bool> iskeybordVisible() async {
-    final ViewInsects = View.of(Get.context!).viewInsets;
-    return ViewInsects.bottom > 0;
+    final viewInsets = View.of(Get.context!).viewInsets;
+    return viewInsets.bottom > 0;
   }
 
   static Future<bool> isPhyscialDevice() async {
@@ -85,7 +85,7 @@ class TDeviceUtils {
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
   }
 
-  static void ShowStatusBar() {
+  static void showStatusBar() {
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
         overlays: SystemUiOverlay.values);
   }

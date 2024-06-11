@@ -1,8 +1,8 @@
 flutter_native_splash:
-  color: "#42a5f5"
-  color_dark: "#029fdh"
-  image: assests/logos/splashlogo
-  image_dark: assests/logos/splashlogodark
+  color: "#FFFFFF"
+  color_dark: "#000000"
+  image: assets/logos/appiconlight.png
+  image_dark: assets/logos/appicondark.png
 
   # From Android 12 onwards, the splash screen is handled differently than in previous versions.
   # command to create splash screen: flutter pub run flutter_native_splash:create --path=splash.yaml
@@ -10,12 +10,12 @@ flutter_native_splash:
 
 
   android_12:
-    color: "#42a5f5"
-    color_dark: "#029fdh"
-    image: assests/logos/splashlogo
-    image_dark: assests/logos/splashlogodark
+    color: "#FFFFFF"
+    color_dark: "#000000"
+    image: assets/logos/appiconlight.png
+    image_dark: assets/logos/appicondark.png
 
-  web: false
+  # web:false
 
   # This package generates native code to customize Flutter's default white native splash screen
   # with background color and splash image.
