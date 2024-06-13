@@ -16,8 +16,8 @@ class TAppTheme{
   static ThemeData lightTheme = ThemeData(
    brightness: Brightness.light,
    scaffoldBackgroundColor: Colors.white,
-   colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-   primaryColor: Colors.blue,
+   colorScheme: const ColorScheme.light(brightness: Brightness.light, primary: Colors.blue,secondary: Colors.amber,),
+   primaryColor: Colors.red,
    useMaterial3: true,  
    textTheme: TTextTheme.lightTextTheme,
    elevatedButtonTheme: TElevatedButtonTheme.ligthElevatedButtonTheme,
@@ -33,7 +33,8 @@ class TAppTheme{
   static ThemeData darkTheme = ThemeData(
    brightness: Brightness.dark,
    scaffoldBackgroundColor: Colors.black,
-   colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+   colorScheme: const ColorScheme.light(brightness: Brightness.dark, primary: Colors.blue,secondary: Colors.amber,),
+  //  colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
    primaryColor: Colors.blue,
    useMaterial3: true,  
    textTheme: TTextTheme.darkTextTheme,
