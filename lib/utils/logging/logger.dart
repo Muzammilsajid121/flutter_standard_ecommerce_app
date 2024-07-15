@@ -4,6 +4,7 @@ class TLogger {
   static final Logger _logger = Logger(
     printer: PrettyPrinter(),
     //customize  the log based on your neeed
+    //The Logger instance is created with a PrettyPrinter, which formats the logs in a readable way.
   );
 
   static void debug(String message) {

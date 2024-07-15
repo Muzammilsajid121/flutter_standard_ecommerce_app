@@ -23,7 +23,6 @@ class OnBordingPage extends StatelessWidget {
               image: AssetImage(image)),
           Text(
             title,
-            // TTextd.onBoardTile1,
             style: Theme.of(context).textTheme.headlineMedium,
             textAlign: TextAlign.center,
           ),
@@ -31,7 +30,6 @@ class OnBordingPage extends StatelessWidget {
          
           Text(
             subTitle,
-            // TTextd.onBoardTile1,
             style: Theme.of(context).textTheme.bodyMedium,
             textAlign: TextAlign.center,
           ),

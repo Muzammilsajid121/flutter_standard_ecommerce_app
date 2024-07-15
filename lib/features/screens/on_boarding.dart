@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_standard_ecommerce_app/features/authentication/onboarding.controllers/onboarding_controller.dart';
+import 'package:flutter_standard_ecommerce_app/features/authentication/onboarding.controllers/widgets/onboarding_dot_navigation.dart';
+import 'package:flutter_standard_ecommerce_app/features/authentication/onboarding.controllers/widgets/onboarding_nextbutton.dart';
+import 'package:flutter_standard_ecommerce_app/features/authentication/onboarding.controllers/widgets/onboarding_skip.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter_standard_ecommerce_app/utils/helpers/herlper_functions.dart';
+import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 
 class OnBoardingScreen extends StatelessWidget {
@@ -10,35 +15,47 @@ class OnBoardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(OnbordController());
+
     return Scaffold(
         body: Stack(
       children: [
 
         ///horizontal scrollable pages
         PageView(
+          controller: controller.pageController,
           children: const [
-            OnBoardingScreen2(
-                image: TImages.onboardingimage1,
+            OnBoardingPage(
+                image: TImages.onboardingimage3,
                 title: TText.onBoardingTitle1,
                 subtitle: TText.onBoardingSubtitle1),
-            OnBoardingScreen2(
+            OnBoardingPage(
                 image: TImages.onboardingimage2,
                 title: TText.onBoardingTitle2,
                 subtitle: TText.onBoardingSubtitle2),
-            OnBoardingScreen2(
-                image: TImages.onboardingimage3,
+            OnBoardingPage(
+                image: TImages.onboardingimage4,
                 title: TText.onBoardingTitle3,
                 subtitle: TText.onBoardingSubtitle3)
           ],
-        )
+        ),
+
+//Functions calling from widgets folder from authentication
+        //const OnBoardingScreen
+        const Skip(),
+        // Dot navigation
+        const Onbordindotnavigation(),
+        // Next button
+        const Onbordingnextbutton(),
+        
       ],
       
     ));
   }
 }
 
-class OnBoardingScreen2 extends StatelessWidget {
-  const OnBoardingScreen2(
+class OnBoardingPage extends StatelessWidget {
+  const OnBoardingPage(
       {super.key,
       required this.image,
       required this.title,
@@ -72,11 +89,6 @@ class OnBoardingScreen2 extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
 
-          //skip button
-
-          //dot navigation smooth indicator
-
-          //circular button
         ],
       ),
     );

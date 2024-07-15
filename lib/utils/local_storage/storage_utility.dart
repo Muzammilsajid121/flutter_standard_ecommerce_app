@@ -9,10 +9,11 @@ class TLocalStorage {
     return _instance;
   }
 
+ //Get Data
   TLocalStorage._internal();
   final _storage = GetStorage();
 
-  // Generic method to save the data
+ // Generic method to save the data
   Future<void> saveData<T>(String key, T value) async {
     await _storage.write(key, value);
   }

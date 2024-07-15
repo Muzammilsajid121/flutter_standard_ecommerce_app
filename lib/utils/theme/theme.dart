@@ -11,7 +11,7 @@ class TAppTheme{
   //make const private
   TAppTheme._();
 
-
+  
   //LIGHT THEME
   static ThemeData lightTheme = ThemeData(
    brightness: Brightness.light,

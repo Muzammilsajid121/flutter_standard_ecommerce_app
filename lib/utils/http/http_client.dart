@@ -15,6 +15,7 @@ import 'package:http/http.dart' as http;
 class THttpHelper {
   static const String _baseUrl = 'https://example.com'; // Use a valid URL
 
+// for get
   static Future<Map<String, dynamic>> get(String endpoint) async {
     final response = await http.get(Uri.parse('$_baseUrl/$endpoint'));
     return _handleResponse(response);
@@ -47,7 +48,7 @@ class THttpHelper {
     return _handleResponse(response);
   }
 
-// for delet
+// for delete
   static Future<Map<String, dynamic>> delete(String endpoint) async {
     final response = await http.delete(
       Uri.parse('$_baseUrl/$endpoint'),
