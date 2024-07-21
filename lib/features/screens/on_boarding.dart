@@ -46,7 +46,7 @@ class OnBoardingScreen extends StatelessWidget {
         // Dot navigation
         const Onbordindotnavigation(),
         // Next button
-        const Onbordingnextbutton(),
+        const Onbordingnextbutton( ),
         
       ],
       

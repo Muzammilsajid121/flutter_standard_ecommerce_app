@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_standard_ecommerce_app/features/screens/login/login.dart';
 import 'package:get/get.dart';
 
 class OnbordController extends GetxController {
@@ -40,8 +41,14 @@ class OnbordController extends GetxController {
   }
 
 // update current index jump to the last page
+  // void skipPage() {
+  //   currentPageIndex.value = 2;
+  //   pageController.jumpToPage(2);
+  // }
+
+    // update current index jump to the last page
   void skipPage() {
-    currentPageIndex.value = 2;
-    pageController.jumpToPage(2);
+    Get.to(LoginScreen());
   }
+  
 }
