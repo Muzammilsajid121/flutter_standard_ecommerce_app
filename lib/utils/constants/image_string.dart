@@ -3,10 +3,10 @@
 class TImages{
 
   //App logos
-  static const String darkApplogo = 'assets/logos/logoimagenameindark';
-  static const String lightApplogo = 'assetrs/logos/inwhite.png';
-  static const String googlelogo = 'assetrs/logos/inwhite.png';
-  static const String facebooklogo = 'assetrs/logos/inwhite.png';
+  static const String darkApplogo = 'assets/logos/appicondark.png';
+  static const String lightApplogo = 'assets/logos/appiconlight.png';
+  static const String googlelogo = 'assets/logos/google.png';
+  static const String facebooklogo = 'assets/logos/facebook1.png';
 
 
   //Social logos

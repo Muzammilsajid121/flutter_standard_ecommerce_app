@@ -6,7 +6,6 @@ import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter_standard_ecommerce_app/utils/helpers/herlper_functions.dart';
-import 'package:flutter_standard_ecommerce_app/utils/theme/custom_themes/outline_button_theme.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -24,11 +23,13 @@ class LoginScreen extends StatelessWidget {
   //  TSpacingStyle.paddingWithAppbarHeight
 
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               //logo title and subtitle
               Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Image.asset(dark? TImages.lightApplogo: TImages.darkApplogo),
+                  Image.asset(dark? TImages.lightApplogo: TImages.darkApplogo, height: TSizes.productImageSize,),
                   Text(TText.loginTitle, style: Theme.of(context).textTheme.titleSmall,),
                   const SizedBox(height: TSizes.sm,)  ,
                   Text(TText.loginsubTitle, style: Theme.of(context).textTheme.bodyMedium,),                
@@ -64,22 +65,34 @@ class LoginScreen extends StatelessWidget {
                          Row(
                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                            children: [
+                            Row(
+                              children: [
                              //remeberme
-                             Checkbox(value: false, onChanged: (value){
+                            Checkbox(value: false, onChanged: (value){
                              }),
                              const Text(TText.rememberMe),
-                 
-                             //forgot password
+                              ],
+                            ),
+
+                            Row(
+                              children: [
+                           //forgot password
                              TextButton(onPressed: (){}, child:const  Text(TText.forgetPassword))
+                              ],
+                            ),                        
+                 
                            ],
                          ),
+
                          const SizedBox(height: TSizes.defaultSpaceBtwSection,),
                  
                          //Signin button
-                         ElevatedButton(onPressed: (){}, child: const Text(TText.signIn)),
+                         SizedBox( width: double.infinity,
+                         child: ElevatedButton(onPressed: (){}, child: const Text(TText.signIn))),
                          const SizedBox(height: TSizes.defaultSpaceBtwItem,),
                          //create account buttpn
-                         OutlinedButton(onPressed: (){}, child: const Text(TText.createAccount)),
+                         SizedBox( width: double.infinity,
+                         child: OutlinedButton(onPressed: (){}, child: const Text(TText.createAccount))),
                         
                  
                          const SizedBox(height: TSizes.defaultSpaceBtwSection,)

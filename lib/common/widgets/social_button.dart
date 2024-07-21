@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_standard_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 
@@ -15,18 +16,20 @@ class TSocialButton extends StatelessWidget {
         //GOOGLE
         Container(
           decoration: BoxDecoration(
+            color: TColors.borderSecondary,
             borderRadius: BorderRadius.circular(20)
           ),
-          child: Image.asset(TImages.googlelogo),
+          child: Image.asset(TImages.googlelogo, height: 40,),
         ),
     const SizedBox(width: TSizes.defaultSpaceBtwItem,),
     
           //FB
         Container(
           decoration: BoxDecoration(
+            color: TColors.borderSecondary,
             borderRadius: BorderRadius.circular(20)
           ),
-          child: Image.asset(TImages.facebooklogo),
+          child: Image.asset(TImages.facebooklogo, height: 40,),
         )
       ],
     );

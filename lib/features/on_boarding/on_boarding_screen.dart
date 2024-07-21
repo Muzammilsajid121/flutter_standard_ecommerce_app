@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_standard_ecommerce_app/features/authentication/onboarding.controllers/onboarding_controller.dart';
-import 'package:flutter_standard_ecommerce_app/features/authentication/onboarding.controllers/widgets/onboarding_dot_navigation.dart';
-import 'package:flutter_standard_ecommerce_app/features/authentication/onboarding.controllers/widgets/onboarding_nextbutton.dart';
-import 'package:flutter_standard_ecommerce_app/features/authentication/onboarding.controllers/widgets/onboarding_skip.dart';
+import 'package:flutter_standard_ecommerce_app/features/on_boarding/on_boarding_controller.dart';
+import 'package:flutter_standard_ecommerce_app/features/on_boarding/on_boarding_widgets/onboarding_dot_navigation.dart';
+import 'package:flutter_standard_ecommerce_app/features/on_boarding/on_boarding_widgets/onboarding_nextbutton.dart';
+import 'package:flutter_standard_ecommerce_app/features/on_boarding/on_boarding_widgets/onboarding_skip.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/text_strings.dart';
@@ -40,8 +40,7 @@ class OnBoardingScreen extends StatelessWidget {
           ],
         ),
 
-//Functions calling from widgets folder from authentication
-        //const OnBoardingScreen
+//Functions calling from widgets folder from onboarding_widgets
         const Skip(),
         // Dot navigation
         const Onbordindotnavigation(),

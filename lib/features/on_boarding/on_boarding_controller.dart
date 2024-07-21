@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_standard_ecommerce_app/features/screens/login/login.dart';
+import 'package:flutter_standard_ecommerce_app/features/logins/logins_screen.dart';
 import 'package:get/get.dart';
 
 class OnbordController extends GetxController {
@@ -19,32 +19,15 @@ class OnbordController extends GetxController {
   }
 
 // update current index jump to the next page
-  /* void nextPage() {
+   void nextPage() {
     if (currentPageIndex.value == 2) {
-      // Get.to(LoginScreen());
-      int page = currentPageIndex.value;
-      pageController.jumpToPage(page);
+      Get.offAll(const LoginScreen());
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);
-    }
-  }*/
-
-  void nextPage() {
-    if (currentPageIndex.value < 2) {
-      int page = currentPageIndex.value + 1;
-      currentPageIndex.value = page; // Update the current page index
-      pageController.jumpToPage(page);
-    } else {
-      pageController.jumpToPage(2);
     }
   }
 
-// update current index jump to the last page
-  // void skipPage() {
-  //   currentPageIndex.value = 2;
-  //   pageController.jumpToPage(2);
-  // }
 
     // update current index jump to the last page
   void skipPage() {
