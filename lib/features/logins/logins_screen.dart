@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_standard_ecommerce_app/common/styles/spacing_styles.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/form_devider.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/social_button.dart';
+import 'package:flutter_standard_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/text_strings.dart';
@@ -45,18 +46,18 @@ class LoginScreen extends StatelessWidget {
                  
                     //email
                     TextFormField(
-                      decoration: const InputDecoration(
+                      decoration:  InputDecoration(
                       prefixIcon: Icon(Iconsax.direct_right),
-                      labelText: TText.email,
+                      labelText: TText.email,labelStyle: TextStyle(color: dark? TColors.textWhite: TColors.dark)
                       ),
                     ),
                     const SizedBox(height: TSizes.spaceBtwFields),
                     
                     //password
                       TextFormField(
-                      decoration:const  InputDecoration(
+                      decoration:  InputDecoration(
                       suffixIcon: Icon(Iconsax.eye_slash),
-                      labelText: TText.password,
+                      labelText: TText.password,labelStyle: TextStyle(color: dark? TColors.textWhite: TColors.dark)
                       ),
                     ),
                     const SizedBox(height: TSizes.spaceBtwFields),
@@ -102,7 +103,9 @@ class LoginScreen extends StatelessWidget {
                ),
 
     // calling devider from commons widgets
-    TFormDevider(deviderText: TText.orSignInWith.capitalize!),
+    TFormDivider(dividerText: TText.orSignInWith.capitalize!),
+
+    const SizedBox(height: TSizes.defaultSpaceBtwItem,),
 
     // calling footer google and facebook icons from common widgets
     TSocialButton(),

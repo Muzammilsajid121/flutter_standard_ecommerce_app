@@ -19,14 +19,24 @@ class OnbordController extends GetxController {
   }
 
 // update current index jump to the next page
-   void nextPage() {
-    if (currentPageIndex.value == 2) {
-      Get.offAll(const LoginScreen());
-    } else {
+  //  void nextPage() {
+  //   if (currentPageIndex.value == 2) {
+  //     Get.offAll(const LoginScreen());
+  //   } else {
+  //     int page = currentPageIndex.value + 1;
+  //     pageController.jumpToPage(page);
+  //   }
+  // }  // update current index jump to the next page
+  void nextPage() {
+    if (currentPageIndex.value < 2) {
       int page = currentPageIndex.value + 1;
+      currentPageIndex.value = page; // Update the current page index
       pageController.jumpToPage(page);
+    } else {
+      Get.offAll(() => LoginScreen());
     }
   }
+
 
 
     // update current index jump to the last page
