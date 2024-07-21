@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_standard_ecommerce_app/common/styles/spacing_styles.dart';
-import 'package:flutter_standard_ecommerce_app/utils/constants/colors.dart';
+import 'package:flutter_standard_ecommerce_app/common/widgets/form_devider.dart';
+import 'package:flutter_standard_ecommerce_app/common/widgets/social_button.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter_standard_ecommerce_app/utils/helpers/herlper_functions.dart';
+import 'package:flutter_standard_ecommerce_app/utils/theme/custom_themes/outline_button_theme.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -78,45 +80,20 @@ class LoginScreen extends StatelessWidget {
                          const SizedBox(height: TSizes.defaultSpaceBtwItem,),
                          //create account buttpn
                          OutlinedButton(onPressed: (){}, child: const Text(TText.createAccount)),
+                        
                  
                          const SizedBox(height: TSizes.defaultSpaceBtwSection,)
                     
                   ], ),
                )
                ),
-               //devider
-     Row( mainAxisAlignment: MainAxisAlignment.center,
-    children: [
-    //put dev in fl;exible if not show
-    Divider(color: dark? TColors.darkGrey : TColors.grey, thickness: 0.8, ),
-    Text(TText.orSignInWith.capitalize!, style: Theme.of(context).textTheme.labelMedium,),
-    Divider(color: dark? TColors.darkGrey : TColors.grey, thickness: 0.8, ),
-    const SizedBox(height: TSizes.defaultSpaceBtwSection,),
-               ],
-               ),
 
+    // calling devider from commons widgets
+    TFormDevider(deviderText: TText.orSignInWith.capitalize!),
 
-    //footer google and facebook icons
-    Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        //GOOGLE
-        Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20)
-          ),
-          child: Image.asset(TImages.googlelogo),
-        ),
-    const SizedBox(width: TSizes.defaultSpaceBtwItem,),
-          //FB
-        Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20)
-          ),
-          child: Image.asset(TImages.facebooklogo),
-        )
-      ],
-    )
+    // calling footer google and facebook icons from common widgets
+    TSocialButton(),
+  
 
             ],
         
