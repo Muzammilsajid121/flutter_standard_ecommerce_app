@@ -5,8 +5,12 @@ class TImages{
   //App logos
   static const String darkApplogo = 'assets/logos/appicondark.png';
   static const String lightApplogo = 'assets/logos/appiconlight.png';
+
+  //Login Screen related
   static const String googlelogo = 'assets/logos/google.png';
   static const String facebooklogo = 'assets/logos/facebook1.png';
+  static const String emaildeliver = 'assets/logos/emaildelivered.png';
+  static const String emailsuccess = 'assets/logos/success.png';
 
 
   //Social logos

@@ -4,10 +4,12 @@ import 'package:flutter_standard_ecommerce_app/common/widgets/form_devider.dart'
 import 'package:flutter_standard_ecommerce_app/common/widgets/social_button.dart';
 import 'package:flutter_standard_ecommerce_app/features/signup/singup_widgets/signup_form.dart';
 import 'package:flutter_standard_ecommerce_app/features/signup/singup_widgets/signup_terms_condition.dart';
+import 'package:flutter_standard_ecommerce_app/features/signup/verify_email_screen.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter_standard_ecommerce_app/utils/helpers/herlper_functions.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SignupScreen extends StatelessWidget {
@@ -38,16 +40,16 @@ class SignupScreen extends StatelessWidget {
 
     SizedBox(height: TSizes.defaultSpaceBtwSection,),
     //Create Account Button
-    SizedBox(width: double.infinity,
-    child: OutlinedButton(onPressed: (){}, child: Text(TText.createAccount))),
+    SizedBox(width: double.infinity, child: OutlinedButton(onPressed: (){
+      Get.to(()=> VerifyEmailScreen); }, child: Text(TText.createAccount))),
+
+      
     SizedBox(height: TSizes.defaultSpaceBtwSection,),
     
     //CALLING DEVIDER AND SOCIAL BUTTONS FROM COMMONS/WIDGETS
     TFormDivider(dividerText: TText.orSignUpWith),
     SizedBox(height: TSizes.defaultSpaceBtwSection,),
     TSocialButton(),
-
-
 
 
         ],

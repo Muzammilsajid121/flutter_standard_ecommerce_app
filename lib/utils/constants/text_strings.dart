@@ -33,8 +33,11 @@
   static const String privacyPolicy = "Privacy Policy";
   static const String termsOfUse = "Terms of Use";
   static const String verificationCode = "Verificationcode";
-  static const String resentEmail = "Resent Email";
-  static const String resentEmailIn = "Resent Email in";
+  static const String continues = "Continue";
+  static const String resendEmail = "Resend Email";
+  // static const String yourAccountCreatedTitle= "Resend Email";
+  // static const String resendEmail = "Resend Email";
+
 
 //Authentication Heading Text
   static const String example = "hjkknnkn";
