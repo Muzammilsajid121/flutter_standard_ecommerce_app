@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_standard_ecommerce_app/features/logins/logins_screen.dart';
+import 'package:flutter_standard_ecommerce_app/features/login/logins_screen.dart';
 import 'package:get/get.dart';
 
 class OnbordController extends GetxController {
