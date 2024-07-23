@@ -21,8 +21,8 @@ class MyApp extends StatelessWidget {
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
       home: 
-      const ForgotPassword()
-      // const SignupScreen()
+      // const ForgotPassword()
+      const LoginScreen()
       // const OnBoardingScreen(),
     );
   }
