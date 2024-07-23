@@ -41,7 +41,7 @@ class SignupScreen extends StatelessWidget {
     SizedBox(height: TSizes.defaultSpaceBtwSection,),
     //Create Account Button
     SizedBox(width: double.infinity, child: OutlinedButton(onPressed: (){
-      Get.to(()=> VerifyEmailScreen); }, child: Text(TText.createAccount))),
+      Get.to(()=> VerifyEmailScreen()); }, child: Text(TText.createAccount))),
 
       
     SizedBox(height: TSizes.defaultSpaceBtwSection,),

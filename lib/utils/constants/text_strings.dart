@@ -35,8 +35,8 @@
   static const String verificationCode = "Verificationcode";
   static const String continues = "Continue";
   static const String resendEmail = "Resend Email";
-  // static const String yourAccountCreatedTitle= "Resend Email";
-  // static const String resendEmail = "Resend Email";
+  static const String submit= "Submit";
+  static const String done = "Done";
 
 
 //Authentication Heading Text
