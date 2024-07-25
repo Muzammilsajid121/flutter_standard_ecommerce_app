@@ -21,11 +21,11 @@ class TImages{
     static const String produc1 = 'assets/logos/logoimagenameindark';
     static const String product2 = 'assetrs/logos/inwhite.png';
 
-  //Onboarding images
-    static const String onboardingimage1 = 'assets/images/onboard1.json';
-    static const String onboardingimage2 = 'assets/images/onboard2.json';
-    static const String onboardingimage3 = 'assets/images/onboard3.json';
-    static const String onboardingimage4 = 'assets/images/onboard4.json'; 
+  //Onboarding animations
+    static const String onboardingimage1 = 'assets/animations/onboard1.json';
+    static const String onboardingimage2 = 'assets/animations/onboard2.json';
+    static const String onboardingimage3 = 'assets/animations/onboard3.json';
+    static const String onboardingimage4 = 'assets/animations/onboard4.json'; 
  
 
 }

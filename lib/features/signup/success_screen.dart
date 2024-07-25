@@ -17,8 +17,7 @@ class SuccessScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(TSizes.defaultSpace),
         child: Column(
-          // mainAxisAlignment: MainAxisAlignment.center,
-          // crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
         
               //Image
@@ -31,17 +30,12 @@ class SuccessScreen extends StatelessWidget {
         const SizedBox( height: TSizes.defaultSpaceBtwItem,),
         
         Text(TText.yourAccountCreatedSubTitle, style: Theme.of(context).textTheme.bodyMedium,textAlign: TextAlign.center,),
-         const SizedBox(height: TSizes.defaultSpaceBtwItem, ),
-        
-        // Text( TText.confirEmailSubTitle,style: Theme.of(context).textTheme.bodySmall, textAlign: TextAlign.center,),
-        //  const SizedBox(height: TSizes.defaultSpaceBtwItem,),
+         const SizedBox(height: TSizes.defaultSpaceBtwSection, ),
         
         //Continue Button
         SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){ Get.to(()=>LoginScreen());}, 
         child: const Text(TText.continues))),
-        
-        // SizedBox(width: double.infinity, child: OutlinedButton(onPressed: (){}, child: Text(TText.resendEmail))),
-        
+                
             
           ],),
       ),

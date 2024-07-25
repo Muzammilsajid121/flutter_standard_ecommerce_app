@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_standard_ecommerce_app/features/screens/home/home.dart';
+import 'package:flutter_standard_ecommerce_app/home.dart';
 import 'package:flutter_standard_ecommerce_app/utils/helpers/herlper_functions.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';

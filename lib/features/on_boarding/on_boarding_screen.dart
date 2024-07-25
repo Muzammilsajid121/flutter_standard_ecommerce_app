@@ -69,14 +69,13 @@ class OnBoardingPage extends StatelessWidget {
         children: [
           Lottie.asset(
               image,
-              width: THelperFucntion.screenWidth() * 0.8,
+              width: THelperFucntion.screenWidth() * 0.95,
               height: THelperFucntion.screenHeight() * 0.6,
               ),
 
-          // Image.asset(image),
           Text(
             title,
-            style: Theme.of(context).textTheme.headlineMedium,
+            style: Theme.of(context).textTheme.bodyLarge,
             textAlign: TextAlign.center,
           ),
           

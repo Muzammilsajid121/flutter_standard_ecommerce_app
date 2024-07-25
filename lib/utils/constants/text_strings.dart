@@ -53,4 +53,15 @@
   static const String emailNotReceivedMessage ="Didn't get the email? check your junck/spam or resend it.";
   static const String yourAccountCreatedTitle = "Your Account successfully created! ";
   static const String yourAccountCreatedSubTitle =  "Welcome to your Ultimate Shopping Destination : Your Account is Created, Unlesh the Joy of Seamless Online Shoopping";
+
+//Home
+static const String homeAppbarTitle = "Good day for shopping";
+static const String homeAppbarSubTitle = "Muzammil Sajid";
+
+
+
+
+
+
+
 }
