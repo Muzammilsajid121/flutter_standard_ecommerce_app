@@ -57,6 +57,9 @@
 //Home
 static const String homeAppbarTitle = "Good day for shopping";
 static const String homeAppbarSubTitle = "Muzammil Sajid";
+static const String searchInStore = "Search in Store";
+
+
 
 
 
