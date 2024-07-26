@@ -26,6 +26,14 @@ class TImages{
     static const String onboardingimage2 = 'assets/animations/onboard2.json';
     static const String onboardingimage3 = 'assets/animations/onboard3.json';
     static const String onboardingimage4 = 'assets/animations/onboard4.json'; 
+
+  //Categories Icons
+  static const String animal = 'assets/icons/categories/animal.svg';
+  static const String cloth = 'assets/icons/categories/cloth.svg';
+  static const String electronic = 'assets/icons/categories/electronic.svg';
+  static const String furniture = 'assets/icons/categories/furniture.svg';
+  static const String shoe = 'assets/icons/categories/shoe.svg';
+
  
 
 }
