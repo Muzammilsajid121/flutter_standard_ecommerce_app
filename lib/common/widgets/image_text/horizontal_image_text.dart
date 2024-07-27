@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/helpers/herlper_functions.dart';
+import 'package:flutter_svg/svg.dart';
 
 class THorizontalImageTextScroll extends StatelessWidget {
   const THorizontalImageTextScroll(
@@ -36,9 +37,9 @@ class THorizontalImageTextScroll extends StatelessWidget {
                       backgroundColor ?? (dark ? TColors.black : TColors.white),
                   borderRadius: BorderRadius.circular(100)),
               child: Center(
-                child: Image.asset(
-                  image,
-                  color: dark ? TColors.black : TColors.white,
+                child: SvgPicture.asset(
+                  image,height: 40,width: 40,
+                  // color: dark ? TColors.black : TColors.white,
                   fit: BoxFit.cover,
                 ),
               ),

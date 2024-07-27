@@ -15,7 +15,7 @@ class THomeCategories extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           itemBuilder: (_, index) {
             return THorizontalImageTextScroll(
-              image: TImages.darkApplogo,
+              image: TImages.shoe,
               title: 'Shoes',
               OnTap: () {},
             );

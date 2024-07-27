@@ -39,7 +39,7 @@ color: showbackground ? dark ? TColors.dark: TColors.white: Colors.transparent,
               ),
               Text(
                 text,
-                style: Theme.of(context).textTheme.bodySmall,
+                style: Theme.of(context).textTheme.bodyMedium,
               )
             ],
           ),

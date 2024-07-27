@@ -37,7 +37,7 @@ body: Padding( padding: const EdgeInsets.all(TSizes.defaultSpace),
 Text( TText.confirmEmail, style: Theme.of(context).textTheme.bodyLarge, textAlign: TextAlign.center, ),
 const SizedBox( height: TSizes.defaultSpaceBtwItem,),
 
-Text('support@codingwitht.com', style: Theme.of(context).textTheme.bodyMedium,textAlign: TextAlign.center,),
+Text('support@codetoflutter.com', style: Theme.of(context).textTheme.bodyMedium,textAlign: TextAlign.center,),
  const SizedBox(height: TSizes.defaultSpaceBtwItem, ),
 
 Text( TText.confirEmailSubTitle,style: Theme.of(context).textTheme.bodySmall, textAlign: TextAlign.center,),

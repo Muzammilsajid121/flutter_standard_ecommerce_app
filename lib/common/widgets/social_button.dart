@@ -16,7 +16,7 @@ class TSocialButton extends StatelessWidget {
         //GOOGLE
         Container(
           decoration: BoxDecoration(
-            color: TColors.borderSecondary,
+            color: TColors.borderSecondary.withOpacity(0.5),
             borderRadius: BorderRadius.circular(20)
           ),
           child: Image.asset(TImages.googlelogo, height: 40,),
@@ -26,10 +26,10 @@ class TSocialButton extends StatelessWidget {
           //FB
         Container(
           decoration: BoxDecoration(
-            color: TColors.borderSecondary,
+            color: TColors.borderSecondary.withOpacity(0.5),
             borderRadius: BorderRadius.circular(20)
           ),
-          child: Image.asset(TImages.facebooklogo, height: 40,),
+          child: Image.asset(TImages.facebooklogo, height: 42,),
         )
       ],
     );

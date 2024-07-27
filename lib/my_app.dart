@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_standard_ecommerce_app/features/authentication/password_configuration/forgot_password.dart';
 import 'package:flutter_standard_ecommerce_app/features/login/logins_screen.dart';
 import 'package:flutter_standard_ecommerce_app/features/on_boarding/on_boarding_screen.dart';
-import 'package:flutter_standard_ecommerce_app/home.dart';
+import 'package:flutter_standard_ecommerce_app/features/home/home.dart';
 import 'package:flutter_standard_ecommerce_app/features/signup/signup_screen.dart';
 import 'package:flutter_standard_ecommerce_app/features/signup/verify_email_screen.dart';
 import 'package:flutter_standard_ecommerce_app/navigation_menu.dart';
@@ -27,6 +27,8 @@ class MyApp extends StatelessWidget {
       // const HomeScreen(),
         // const NavigationMenu()
       const OnBoardingScreen(),
+      // const HomeScreen(),
+
     );
   }
 }
