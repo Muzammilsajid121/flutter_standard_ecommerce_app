@@ -28,12 +28,19 @@ class TImages{
     static const String onboardingimage4 = 'assets/animations/onboard4.json'; 
 
   //Categories Icons
-  static const String animal = 'assets/icons/categories/animal.svg';
-  static const String cloth = 'assets/icons/categories/cloth.svg';
-  static const String electronic = 'assets/icons/categories/electronic.svg';
-  static const String furniture = 'assets/icons/categories/furniture.svg';
-  static const String shoe = 'assets/icons/categories/shoe.svg';
+   static const String animal = 'assets/icons/categories/animal.svg';
+   static const String cloth = 'assets/icons/categories/cloth.svg';
+   static const String electronic = 'assets/icons/categories/electronic.svg';
+   static const String furniture = 'assets/icons/categories/furniture.svg';
+   static const String shoe = 'assets/icons/categories/shoe.svg';
 
- 
+  //promo banners home screen
+  static const String promobannerone = 'assets/images/banners/promobannerone.jpg';
+  static const String promobannertwo = 'assets/images/banners/promobannertwo.jpg';
+  static const String promobannerthree ='assets/images/banners/promobannerthree.jpg';
+  static const String promobannerfour ='assets/images/banners/promobannerfour.jpg';
+  static const String promobannerfive ='assets/images/banners/promobannerfive.jpg';
+
+
 
 }
