@@ -6,7 +6,7 @@ class TCircularContainer extends StatelessWidget {
     super.key,
     //inko required nhi banaya aur kuch ko by default property di jo call karty way change karskty
     this.radius = 400,
-    this.padding = 0,
+    this.padding ,
     this.backgrounColor = TColors.white,
     this.child,
     this.height = 400,
@@ -17,7 +17,7 @@ class TCircularContainer extends StatelessWidget {
   final double? height;
   final double? width;
   final double radius;
-  final double padding;
+  final EdgeInsets? padding;
   final EdgeInsets? margin;
   final Widget? child;
   final Color backgrounColor;

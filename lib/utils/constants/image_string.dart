@@ -17,9 +17,9 @@ class TImages{
   static const String social1 = 'assets/logos/logoimagenameindark';
   static const String social2 = 'assetrs/logos/inwhite.png';
 
-  //product images
-    static const String produc1 = 'assets/logos/logoimagenameindark';
-    static const String product2 = 'assetrs/logos/inwhite.png';
+  // //product images
+  //   static const String produc1 = 'assets/logos/logoimagenameindark';
+  //   static const String product2 = 'assetrs/logos/inwhite.png';
 
   //Onboarding animations
     static const String onboardingimage1 = 'assets/animations/onboard1.json';
@@ -41,6 +41,8 @@ class TImages{
   static const String promobannerfour ='assets/images/banners/promobannerfour.jpg';
   static const String promobannerfive ='assets/images/banners/promobannerfive.jpg';
 
+  // products images
+  static const String productimage1 = "assets/images/products/productimage1.png";
 
 
 }
