@@ -43,6 +43,22 @@ class TImages{
 
   // products images
   static const String productimage1 = "assets/images/products/productimage1.png";
+  static const String productimage2 = "assets/images/products/productimage2.png";
+  static const String productimage3 = "assets/images/products/productimage3.png";
+  static const String productimage4 = "assets/images/products/productimage4.png";
+  static const String productimage5 = "assets/images/products/productimage5.png";
+  static const String productimage6 = "assets/images/products/productimage6.png";
+  static const String productimage7 = "assets/images/products/productimage7.png";
+  static const String productimage8 = "assets/images/products/productimage8.png";
+  static const String productimage9 = "assets/images/products/productimage9.png";
+  static const String productimage10 = "assets/images/products/productimage10.png";
+  static const String productimage11 = "assets/images/products/productimage11.png";
+  static const String productimage12 = "assets/images/products/productimage12.png";
+  static const String productimage13 = "assets/images/products/productimage13.png";
+  static const String productimage14 = "assets/images/products/productimage14.png";
+  static const String productimage15 = "assets/images/products/productimage15.png";
+  // static const String productimage16 = "assets/images/products/productimage16.png";
+  // static const String productimage17 = "assets/images/products/productimage17.png";
 
 
 }
