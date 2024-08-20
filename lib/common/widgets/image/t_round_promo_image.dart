@@ -11,9 +11,9 @@ class TRoundedpromoimage extends StatelessWidget {
     this.border,
     required this.imageUrl,
     this.applyImageRadius = true,
-    this.borderRadius = 35,
+    this.borderRadius = 15,
     this.fit = BoxFit.cover,
-    this.padding = EdgeInsets.zero,
+    this.padding = const  EdgeInsets.all(12),
     this.isNetworkImage = false,
     this.onPressed,
   });
