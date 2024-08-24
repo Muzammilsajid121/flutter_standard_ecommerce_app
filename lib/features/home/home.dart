@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/appbar/home_appbar.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/custom_shapes/containers/primary_header_container.dart';
+import 'package:flutter_standard_ecommerce_app/common/widgets/layouts/grid_layout.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/search_container.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/texts/section_heading.dart';
@@ -65,7 +66,8 @@ class HomeScreen extends StatelessWidget {
        const SizedBox(height: TSizes.defaultSpaceBtwSection,),
        
       //popular product vertical card video 16
-       TProductCardVertical(),
+      TGridLayout(itemcount: 6, itembuilder: (_, index) =>const TProductCardVertical() ),
+
        
        
        ] 
