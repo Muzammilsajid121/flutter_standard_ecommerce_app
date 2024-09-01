@@ -4,6 +4,7 @@ import 'package:flutter_standard_ecommerce_app/common/widgets/custom_shapes/cont
 import 'package:flutter_standard_ecommerce_app/common/widgets/icons/icon_button.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/image/t_round_promo_image.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/products/product_price_text.dart';
+import 'package:flutter_standard_ecommerce_app/common/widgets/texts/brand_title_with_verified_icon.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/texts/product_title_text.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
@@ -26,12 +27,13 @@ class TProductCardVertical extends StatelessWidget {
         decoration: BoxDecoration(
             boxShadow: [TSHadowStyle.veticalProductShaddow],
             borderRadius: BorderRadius.circular(TSizes.productImageRadius),
-            color: dark ? TColors.grey : TColors.white),
+            color: dark ? TColors.darkGrey : TColors.white),
+            
         child: Column(
           children: [
             //Thumbnail, Wishlist button & Discount tag
             TRoundedContainer(
-              height: 180,
+              height: 180, width: double.infinity,
               padding: EdgeInsets.all(TSizes.sm),
               BackgroundColor: dark ? TColors.dark : TColors.light,
               child: Stack(
@@ -84,28 +86,45 @@ class TProductCardVertical extends StatelessWidget {
                   ),
 
                   //brand title with verified icon
-                  Row(
-                    children: [
-                      Text('Nike',
-                        overflow: TextOverflow.ellipsis, maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-
-                      const SizedBox(width: TSizes.xs),
-                      const Icon(
-                        Iconsax.verify5,
-                        color: TColors.primary,
-                        size: TSizes.iconxs,
-                      )
-                    ],
-                  ),
-
-                  //price with add icon cart   //from common/widgets/products
-                  TProductPriceText(price: '35.0',),
-
+                  TBrandTitleWithVerifiedIcon(title: 'Nikee',),
                 ],
               ),
-            )
+            ),
+   
+   //spacer 
+  Spacer(),
+   Row(
+  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  children: [
+   //price with add icon cart   //from common/widgets/products
+    Padding(
+      padding: const EdgeInsets.only(left: TSizes.sm),
+      child: TProductPriceText(price: '35.0'),
+    ),
+
+    Container(
+      decoration: const BoxDecoration(
+        color: TColors.dark,
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(TSizes.cardRadiusMd),
+          bottomRight: Radius.circular(TSizes.productImageRadius),
+        ),
+      ),
+
+      child: const SizedBox( width: TSizes.iconLg * 1.2, height: TSizes.iconLg * 1.2,
+        child: Center(
+          child: Icon(
+            Iconsax.add,
+            color: TColors.white,
+          ),
+        ),
+      ),
+    ),
+    
+  ],
+),
+
+
           ],
         ),
       ),

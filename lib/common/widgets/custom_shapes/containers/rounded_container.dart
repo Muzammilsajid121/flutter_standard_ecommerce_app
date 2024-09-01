@@ -12,7 +12,7 @@ class TRoundedContainer extends StatelessWidget {
       this.showBorder = false,
       this.radius = TSizes.cardRadiusLg,
       this.bordercolor = TColors.primaryBackground,
-      this.BackgroundColor = TColors.textWhite
+      this.BackgroundColor,
       });
 
 
@@ -24,7 +24,7 @@ class TRoundedContainer extends StatelessWidget {
   final EdgeInsetsGeometry? margin;
   final bool showBorder;
   final Color bordercolor;
-  final Color BackgroundColor;
+  final Color? BackgroundColor;
 
   @override
   Widget build(BuildContext context) {
@@ -41,49 +41,3 @@ class TRoundedContainer extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-// class TRoundedContainer extends StatelessWidget {
-//   const TRoundedContainer({super.key,
-   
-  
-//   });
-
-//   @override
-//   Widget build(BuildContext context) {
-//   final double? width;
-//   final double? height;
-//   final double radius;
-//   final Widget? child;
-//   final EdgeInsetsGeometry? Padding;
-//   final EdgeInsetsGeometry? margin;
-//   bool showborder = false;
-//   final Color bordercolor;
-//   final Color? BackgroundColor;
-
-//     return Container(
-//       width: width,
-//       height: height,
-//       padding: Padding,
-//       decoration: BoxDecoration(
-//           border: showborder
-//               ? Border.all(color: bordercolor, width: 2.0)
-//               : null, // Border agar `showBorder` true hai, tabhi dikhayega
-
-//           //
-//           borderRadius: BorderRadius.circular(radius),
-//           color: BackgroundColor),
-//       child: child,
-//     );
-
-//   }
-// }

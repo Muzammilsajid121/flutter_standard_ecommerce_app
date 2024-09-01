@@ -34,6 +34,9 @@ class TImages{
    static const String furniture = 'assets/icons/categories/furniture.svg';
    static const String shoe = 'assets/icons/categories/shoe.svg';
 
+   static const String clothes = 'assets/icons/categories/cloth.png';
+
+
   //promo banners home screen
   static const String promobannerone = 'assets/images/banners/promobannerone.jpg';
   static const String promobannertwo = 'assets/images/banners/promobannertwo.jpg';
