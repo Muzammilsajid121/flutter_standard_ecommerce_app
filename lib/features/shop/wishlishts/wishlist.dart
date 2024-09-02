@@ -4,6 +4,7 @@ import 'package:flutter_standard_ecommerce_app/common/widgets/icons/icon_button.
 import 'package:flutter_standard_ecommerce_app/common/widgets/layouts/grid_layout.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:flutter_standard_ecommerce_app/features/home/home.dart';
+import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -26,12 +27,18 @@ class FavoriteScreen extends StatelessWidget {
           )
         ],
       ),
+
       
-      body: Column(
-        children: [
-          TGridLayout(
-              itemcount: 4, itembuilder: (_, index) => TProductCardVertical())
-        ],
+      body: Padding(
+        padding: const EdgeInsets.all(TSizes.defaultSpace),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              TGridLayout(
+                  itemcount: 4, itembuilder: (_, index) => TProductCardVertical())
+            ],
+          ),
+        ),
       ),
     );
   }
