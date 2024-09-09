@@ -46,7 +46,11 @@ class LoginScreen extends StatelessWidget {
 
     // calling footer google and facebook icons from common widgets
     TSocialButton(),
-  
+  //  ! warning comment
+  // -- this is org
+  //* Dark green comments
+  //---  this comment is blue
+  // imp comment
 
             ],
         

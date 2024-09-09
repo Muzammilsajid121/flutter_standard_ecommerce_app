@@ -6,10 +6,12 @@ import 'package:flutter_standard_ecommerce_app/common/widgets/image/t_round_prom
 import 'package:flutter_standard_ecommerce_app/common/widgets/products/product_price_text.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/texts/brand_title_with_verified_icon.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/texts/product_title_text.dart';
+import 'package:flutter_standard_ecommerce_app/features/shop/product_details/product_details.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/helpers/herlper_functions.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class TProductCardVertical extends StatelessWidget {
@@ -20,7 +22,8 @@ class TProductCardVertical extends StatelessWidget {
     bool dark = THelperFucntion.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () {},
+      // -- Navigate to product detail screen
+      onTap: ()=> Get.to( ()=> const PrdouctDetail()),
       child: Container(
         width: 180,
         padding: EdgeInsets.all(1),
