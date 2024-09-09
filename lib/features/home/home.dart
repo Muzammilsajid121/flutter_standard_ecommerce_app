@@ -1,9 +1,6 @@
-import 'dart:math';
 
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/appbar/home_appbar.dart';
-import 'package:flutter_standard_ecommerce_app/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/layouts/grid_layout.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/products/product_cards/product_card_vertical.dart';
@@ -12,12 +9,8 @@ import 'package:flutter_standard_ecommerce_app/common/widgets/texts/section_head
 import 'package:flutter_standard_ecommerce_app/features/home/widgets/home_categories.dart';
 import 'package:flutter_standard_ecommerce_app/features/home/widgets/promo_slider.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/colors.dart';
-import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/text_strings.dart';
-import 'package:flutter_standard_ecommerce_app/utils/helpers/herlper_functions.dart';
-import 'package:get/get.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -56,7 +49,9 @@ class HomeScreen extends StatelessWidget {
       
                   ],
                 ),
-              )
+              ),
+          //sized box to see full design of primary header container
+          SizedBox(height: TSizes.defaultSpaceBtwSection,)
                 ],
               )
               ),

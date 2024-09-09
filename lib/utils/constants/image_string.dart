@@ -17,8 +17,8 @@ class TImages{
   static const String social1 = 'assets/logos/logoimagenameindark';
   static const String social2 = 'assetrs/logos/inwhite.png';
 
-  // //product images
-  //   static const String produc1 = 'assets/logos/logoimagenameindark';
+  // //Users Setting images
+    static const String user1 = 'assets/images/users/user1.jpg';
   //   static const String product2 = 'assetrs/logos/inwhite.png';
 
   //Onboarding animations

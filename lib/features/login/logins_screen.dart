@@ -3,14 +3,11 @@ import 'package:flutter_standard_ecommerce_app/common/styles/spacing_styles.dart
 import 'package:flutter_standard_ecommerce_app/common/widgets/form_devider.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/social_button.dart';
 import 'package:flutter_standard_ecommerce_app/features/login/login_widgets/login_form.dart';
-import 'package:flutter_standard_ecommerce_app/features/signup/signup_screen.dart';
-import 'package:flutter_standard_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter_standard_ecommerce_app/utils/helpers/herlper_functions.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});

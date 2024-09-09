@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_standard_ecommerce_app/features/on_boarding/on_boarding_controller.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/device/device_utility.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class Skip extends StatelessWidget {
   const Skip({

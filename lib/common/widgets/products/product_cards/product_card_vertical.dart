@@ -73,6 +73,7 @@ class TProductCardVertical extends StatelessWidget {
                 ],
               ),
             ),
+            const SizedBox(height: TSizes.defaultSpaceBtwItem / 2,),
 
             //Product Details
             Padding(
@@ -81,9 +82,7 @@ class TProductCardVertical extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   TProductTitleText(title: 'Green Nike Air Shoes'),
-                  const SizedBox(
-                    height: TSizes.defaultSpaceBtwItem / 2,
-                  ),
+                  const SizedBox(height: TSizes.defaultSpaceBtwItem / 3,),
 
                   //brand title with verified icon
                   TBrandTitleWithVerifiedIcon(title: 'Nikee',),
@@ -111,11 +110,10 @@ class TProductCardVertical extends StatelessWidget {
         ),
       ),
 
-      child: const SizedBox( width: TSizes.iconLg * 1.2, height: TSizes.iconLg * 1.2,
+      child: const SizedBox( width: TSizes.iconLg * 1, height: TSizes.iconLg * 1,
         child: Center(
           child: Icon(
-            Iconsax.add,
-            color: TColors.white,
+            Iconsax.add, color: TColors.white,
           ),
         ),
       ),

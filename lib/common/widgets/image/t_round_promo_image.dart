@@ -1,6 +1,5 @@
 //shift alt f to align code
 import 'package:flutter/material.dart';
-import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 
 class TRoundedpromoimage extends StatelessWidget {
   const TRoundedpromoimage({

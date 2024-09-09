@@ -39,7 +39,7 @@ class TBrandTitleWithVerifiedIcon extends StatelessWidget {
         Icon(
           Iconsax.verify5,
           color: iconcolor,
-          size: TSizes.xs,
+          size: TSizes.md,
         )
       ],
     );

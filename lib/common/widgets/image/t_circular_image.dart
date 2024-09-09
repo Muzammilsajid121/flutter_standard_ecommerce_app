@@ -28,16 +28,18 @@ class TCicluarImage extends StatelessWidget {
       width: width,
       height: height,
       decoration: BoxDecoration(
-          color: backgroundcolor ??(THelperFucntion.isDarkMode(context)
-                  ? TColors.black : TColors.white),
-          borderRadius: BorderRadius.circular(100)),
+         color: backgroundcolor ??(THelperFucntion.isDarkMode(context) ? TColors.black : TColors.white),
+          borderRadius: BorderRadius.circular(100)
+          ),
+          
       child: Center(
+        child: ClipOval(
           child: Image(
-        image: isnetworkimage
-            ? NetworkImage(image)
-            : AssetImage(image) as ImageProvider,
-        color: overlaycolor,
-      )),
+          image: isnetworkimage ? NetworkImage(image) : AssetImage(image) as ImageProvider,
+          color: overlaycolor,
+          fit: fit,
+                ),
+        )),
     );
   }
 }

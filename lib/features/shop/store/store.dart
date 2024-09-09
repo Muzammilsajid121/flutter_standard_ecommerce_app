@@ -110,7 +110,7 @@ class StoreScreen extends StatelessWidget {
                                                 '256 Product',
                                                 style: Theme.of(context)
                                                     .textTheme
-                                                    .labelMedium,
+                                                    .bodySmall,
                                               )
                                             ],
                                           ))
