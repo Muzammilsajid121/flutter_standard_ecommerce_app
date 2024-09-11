@@ -52,6 +52,15 @@ class LoginScreen extends StatelessWidget {
   //---  this comment is blue
   // imp comment
 
+  //--- SHortcuts of vs codes
+  // cntrl+B to open file str
+  //cntrl+j to open terminal
+  //cntrl+\ to split and to close cntrl+f4
+  // cntrl+tab to go on previous file working on
+  // alt+arrow to change the position of line
+  // cntrl+H to find and replace
+
+
             ],
         
       ),

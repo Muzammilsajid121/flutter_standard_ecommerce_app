@@ -17,9 +17,16 @@ class TImages{
   static const String social1 = 'assets/logos/logoimagenameindark';
   static const String social2 = 'assetrs/logos/inwhite.png';
 
-  // //Users Setting images
+  //user profile images
     static const String user1 = 'assets/images/users/user1.jpg';
-  //   static const String product2 = 'assetrs/logos/inwhite.png';
+    static const String user2 = 'assets/images/users/user2.jpg';
+    static const String user3 = 'assets/images/users/user3.jpg';
+    static const String user4 = 'assets/images/users/user4.jpg';
+    static const String user5 = 'assets/images/users/user5.jpg';
+
+
+
+
 
   //Onboarding animations
     static const String onboardingimage1 = 'assets/animations/onboard1.json';

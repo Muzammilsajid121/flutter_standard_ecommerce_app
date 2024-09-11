@@ -3,6 +3,7 @@ import 'package:flutter_standard_ecommerce_app/utils/theme/custom_themes/appbar_
 import 'package:flutter_standard_ecommerce_app/utils/theme/custom_themes/checkbox_theme.dart';
 import 'package:flutter_standard_ecommerce_app/utils/theme/custom_themes/chip_theme.dart';
 import 'package:flutter_standard_ecommerce_app/utils/theme/custom_themes/elevated_button_theme.dart';
+import 'package:flutter_standard_ecommerce_app/utils/theme/custom_themes/icon_button.dart';
 import 'package:flutter_standard_ecommerce_app/utils/theme/custom_themes/outline_button_theme.dart';
 import 'package:flutter_standard_ecommerce_app/utils/theme/custom_themes/text_field_theme.dart';
 import 'package:flutter_standard_ecommerce_app/utils/theme/custom_themes/text_theme.dart';
@@ -26,6 +27,7 @@ class TAppTheme{
    checkboxTheme: TCheckboxTheme.lightCheckTheme,
    outlinedButtonTheme: TOutlineButtonTheme.lightTOutlineButtonTheme,
    inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
+   iconButtonTheme: TIconButtonTheme.lightTIconButtonTheme,
   );
 
   
@@ -44,6 +46,7 @@ class TAppTheme{
    checkboxTheme: TCheckboxTheme.darkCheckTheme,
    outlinedButtonTheme: TOutlineButtonTheme.darkTOutlineButtonTheme,
    inputDecorationTheme: TTextFormFieldTheme.darkInputDecorationTheme,
+   iconButtonTheme: TIconButtonTheme.darkTIconButtonTheme,
 
   );
   
