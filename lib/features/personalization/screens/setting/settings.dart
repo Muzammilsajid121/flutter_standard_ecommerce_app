@@ -4,6 +4,7 @@ import 'package:flutter_standard_ecommerce_app/common/widgets/appbar/app_bar.dar
 import 'package:flutter_standard_ecommerce_app/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/texts/section_heading.dart';
+import 'package:flutter_standard_ecommerce_app/features/personalization/screens/adress/adress.dart';
 import 'package:flutter_standard_ecommerce_app/features/personalization/screens/profile/profile.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
@@ -49,7 +50,8 @@ class SettingScreen extends StatelessWidget {
       TSectionHeading( title: 'Account Setting', showActionButton: false, ),
       SizedBox(height: TSizes.defaultSpaceBtwItem, ),
       
- TSettingMenuTile(icon: Iconsax.safe_home, title: 'My Addresses',Subtitle: 'Set Shoping delivery address'),
+ TSettingMenuTile(icon: Iconsax.safe_home, title: 'My Addresses',
+ Subtitle: 'Set Shoping delivery address', onTap: () => Get.to( ()=> UserAddressScreeen),),
 
                   TSettingMenuTile(
                       icon: Iconsax.shopping_bag,
