@@ -14,6 +14,7 @@ class TSingleAddress extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFucntion.isDarkMode(context);
     return TRoundedContainer(
+      padding: EdgeInsets.all(TSizes.defaultSpace),
       width: double.infinity,
       showBorder: true,
       BackgroundColor:selectAddress ? TColors.primary.withOpacity(0.5) : Colors.transparent,
@@ -27,14 +28,14 @@ class TSingleAddress extends StatelessWidget {
             top: 0,
             child: Icon(
               selectAddress ? Iconsax.tick_circle5 : null,
-              color: selectAddress ? TColors.dark : TColors.light,
+              color: selectAddress ? TColors.darkGrey : TColors.light,
             ),
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(' Petar',  maxLines: 1, overflow: TextOverflow.ellipsis,
-                style: Theme.of(context).textTheme.titleLarge,
+              Text('Muzammil',  maxLines: 1, overflow: TextOverflow.ellipsis,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
               SizedBox( height: TSizes.sm / 2,),
               Text('(+123)456 7890',   maxLines: 1, overflow: TextOverflow.ellipsis,),

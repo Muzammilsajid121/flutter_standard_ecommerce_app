@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_standard_ecommerce_app/features/shop/cart/cart.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/colors.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class TCartCounterIcon extends StatelessWidget {
@@ -17,7 +19,8 @@ class TCartCounterIcon extends StatelessWidget {
    //cart with numbers on top using stack
     return  Stack(
       children: [
-    IconButton( onPressed: onPressed, icon: Icon(Iconsax.shopping_bag, color: TColors.white,)),
+    IconButton( onPressed: () => Get.to( ()=> CartScreen()),
+     icon: Icon(Iconsax.shopping_bag, color: TColors.white,)),
     //cart item numbers
     Container(width: 18, height: 18,
     decoration: BoxDecoration(color: TColors.black.withOpacity(0.5),

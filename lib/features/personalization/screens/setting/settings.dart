@@ -46,12 +46,11 @@ class SettingScreen extends StatelessWidget {
                 children: [
               
         // Account Setting
-
       TSectionHeading( title: 'Account Setting', showActionButton: false, ),
       SizedBox(height: TSizes.defaultSpaceBtwItem, ),
       
  TSettingMenuTile(icon: Iconsax.safe_home, title: 'My Addresses',
- Subtitle: 'Set Shoping delivery address', onTap: () => Get.to( ()=> UserAddressScreeen),),
+ Subtitle: 'Set Shoping delivery address', onTap: () => Get.to( ()=> UserAddressScreeen()),),
 
                   TSettingMenuTile(
                       icon: Iconsax.shopping_bag,
