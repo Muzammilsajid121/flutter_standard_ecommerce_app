@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/appbar/app_bar.dart';
-import 'package:flutter_standard_ecommerce_app/common/widgets/products/cart/add_remove_prodcut_button.dart';
-import 'package:flutter_standard_ecommerce_app/common/widgets/products/cart/cart_item.dart';
-import 'package:flutter_standard_ecommerce_app/common/widgets/products/product_price_text.dart';
+import 'package:flutter_standard_ecommerce_app/features/shop/cart/widgets/TCartMultipleItems.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 
 class CartScreen extends StatelessWidget {
@@ -14,38 +12,10 @@ class CartScreen extends StatelessWidget {
       appBar: TAppBar(showbackarrow: true, title: Text('Cart', style: Theme.of(context).textTheme.headlineSmall)),
       body: Padding(
         padding: const EdgeInsets.all(TSizes.defaultSpace),
-        child: ListView.separated(
-          shrinkWrap: true,
-          itemCount: 4,
-          separatorBuilder: (_, __) => const SizedBox(height: TSizes.defaultSpaceBtwSection),
-          itemBuilder: (_, index) => Column(
-            children: [
-              //-- From commons/cart
-              TCartItem(),
-              const SizedBox(height: TSizes.defaultSpaceBtwItem,),
-      
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-         children: [
-         Row(
-           children: [
-             const SizedBox(width: 70),
-             //-- Add Remove Buttons From commons/cart
-             TAddRemoveProductButton(),               
-           ],
-         ),  
-         TProductPriceText(price: '256')
-      
-        ],
+        //* Items in Cart from features/cart/widgets
+        child: TCartMultipleItems(),
       ),
-      
-      
-      
-      
-            ],
-          ),
-        ),
-      ),
+      //--checkout button
       bottomNavigationBar: Padding(padding: EdgeInsets.all(TSizes.defaultSpace),
        child: ElevatedButton(child: Text('Checkout \$256'), onPressed: (){},),
       )
