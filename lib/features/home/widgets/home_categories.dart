@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/image_text/horizontal_image_text.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
+import 'package:get/get.dart';
 
 class THomeCategories extends StatelessWidget {
   const THomeCategories({super.key});
@@ -17,7 +18,7 @@ class THomeCategories extends StatelessWidget {
             return THorizontalImageTextScroll(
               image: TImages.shoe,
               title: 'Shoes',
-              OnTap: () {},
+              OnTap: ()=> Get.to( ()=> SubCategoriesScreen()),
             );
           }),
     );

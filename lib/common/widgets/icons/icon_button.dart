@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
-import 'package:flutter_standard_ecommerce_app/utils/helpers/herlper_functions.dart';
 
 //Used as favrt icon button in home screen //video 16
 class TIconButton extends StatelessWidget {
@@ -24,7 +23,7 @@ class TIconButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool dark = THelperFucntion.isDarkMode(context);
+    // bool dark = THelperFucntion.isDarkMode(context);
 
     return Container(
       height: height, width: width,
