@@ -59,6 +59,7 @@ class LoginScreen extends StatelessWidget {
   // cntrl+tab to go on previous file working on
   // alt+arrow to change the position of line
   // cntrl+H to find and replace
+  // cntrl+d to duplicate lines
  // 12:52 done
   
 

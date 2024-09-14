@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_standard_ecommerce_app/features/login/logins_screen.dart';
-import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter_standard_ecommerce_app/utils/helpers/herlper_functions.dart';
-import 'package:get/get.dart';
 
 class SuccessScreen extends StatelessWidget {
-  const SuccessScreen({super.key});
+  const SuccessScreen({super.key,
+   required this.image,
+   required this.title,
+   required this.subtitle,
+   required this.onPressed});
+
+final String image, title, subtitle;
+final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -19,20 +23,20 @@ class SuccessScreen extends StatelessWidget {
           children: [
         
               //Image
-              Image.asset(TImages.emailsuccess, width: THelperFucntion.screenWidth()*0.6,
+              Image.asset(image, width: THelperFucntion.screenWidth()*0.6,
                height: THelperFucntion.screenHeight()*0.3,),
               const SizedBox(height: TSizes.defaultSpaceBtwSection,),
         
         // Title & Subtitle
-        Text( TText.yourAccountCreatedTitle, style: Theme.of(context).textTheme.bodyLarge, textAlign: TextAlign.center, ),
+        Text( title, style: Theme.of(context).textTheme.bodyLarge, textAlign: TextAlign.center, ),
         const SizedBox( height: TSizes.defaultSpaceBtwItem,),
         
-        Text(TText.yourAccountCreatedSubTitle, style: Theme.of(context).textTheme.bodyMedium,textAlign: TextAlign.center,),
-         const SizedBox(height: TSizes.defaultSpaceBtwSection, ),
-        
+        Text(subtitle, style: Theme.of(context).textTheme.bodyMedium,textAlign: TextAlign.center,),     
+
         //Continue Button
-        SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){ Get.to(()=>LoginScreen());}, 
-        child: const Text(TText.continues))),
+        SizedBox(width: double.infinity, child: ElevatedButton(onPressed: onPressed, 
+        child: Text(TText.continues))),
+
                 
             
           ],),

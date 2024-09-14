@@ -84,6 +84,7 @@ flutter:
   assets:
     - assets/logos/
     - assets/icons/
+    - assets/icons/payment/
     - assets/images/banners/
     - assets/images/users/
     - assets/images/products/

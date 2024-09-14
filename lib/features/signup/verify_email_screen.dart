@@ -43,7 +43,14 @@ Text( TText.confirEmailSubTitle,style: Theme.of(context).textTheme.bodySmall, te
  const SizedBox(height: TSizes.defaultSpaceBtwSection,),
 
 //Continue Button
-SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){Get.to(() => const SuccessScreen());},
+  SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){Get.to(() =>  SuccessScreen(
+  image: TImages.success,
+  title: TText.yourAccountCreatedTitle,
+  subtitle: TText.yourAccountCreatedSubTitle,
+  onPressed: () => Get.to(()=>LoginScreen()) ,
+
+  
+));},
  child: const Text(TText.continues))),
 
  const SizedBox(height: TSizes.defaultSpaceBtwItem,),

@@ -6,6 +6,7 @@ import 'package:flutter_standard_ecommerce_app/common/widgets/list_tiles/setting
 import 'package:flutter_standard_ecommerce_app/common/widgets/texts/section_heading.dart';
 import 'package:flutter_standard_ecommerce_app/features/personalization/screens/adress/adress.dart';
 import 'package:flutter_standard_ecommerce_app/features/personalization/screens/profile/profile.dart';
+import 'package:flutter_standard_ecommerce_app/features/shop/order/order.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:get/get.dart';
@@ -59,7 +60,8 @@ class SettingScreen extends StatelessWidget {
                   TSettingMenuTile(
                       icon: Iconsax.bag_tick,
                       title: 'My Order ',
-                      Subtitle: 'In-progress and compelete order'),
+                      Subtitle: 'In-progress and compelete order',
+                      onTap: () => Get.to( ()=> OrderScreen()),),
                   TSettingMenuTile(
                       icon: Iconsax.bank,
                       title: 'My  Account',

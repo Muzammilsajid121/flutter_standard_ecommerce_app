@@ -10,7 +10,7 @@ class TImages{
   static const String googlelogo = 'assets/logos/google.png';
   static const String facebooklogo = 'assets/logos/facebook1.png';
   static const String emaildeliver = 'assets/logos/emaildelivered.png';
-  static const String emailsuccess = 'assets/logos/success.png';
+  static const String success = 'assets/logos/success.png';
 
 
   //Social logos
@@ -40,8 +40,18 @@ class TImages{
    static const String electronic = 'assets/icons/categories/electronic.svg';
    static const String furniture = 'assets/icons/categories/furniture.svg';
    static const String shoe = 'assets/icons/categories/shoe.svg';
-
    static const String clothes = 'assets/icons/categories/cloth.png';
+
+  //payment Icons
+   static const String paypal = 'assets/icons/payment/paypal.png';
+   static const String gpay = 'assets/icons/payment/gpay.png';
+   static const String mastercard = 'assets/icons/payment/mastercard.png';
+   static const String applepay = 'assets/icons/payment/applepay.png';
+   static const String creditcard = 'assets/icons/payment/creditcard.png';
+   static const String successfulPaymentIcon = 'assets/icons/payment/successfulPaymentIcon.png';
+   static const String paytm = 'assets/icons/payment/paytm.png';
+   static const String visa = 'assets/icons/payment/visa.png';
+   static const String paystack = 'assets/icons/payment/paystack.png';
 
 
   //promo banners home screen
