@@ -60,6 +60,9 @@ class TImages{
   static const String promobannerthree ='assets/images/banners/promobannerthree.jpg';
   static const String promobannerfour ='assets/images/banners/promobannerfour.jpg';
   static const String promobannerfive ='assets/images/banners/promobannerfive.jpg';
+  static const String promobannersix ='assets/images/banners/promobannersix.jpg';
+  static const String promobannerseven ='assets/images/banners/promobannerseven.jpg';
+  static const String promobannereight ='assets/images/banners/promobannereight.jpg';
 
   // products images
   static const String productimage1 = "assets/images/products/productimage1.png";
@@ -70,15 +73,15 @@ class TImages{
   static const String productimage6 = "assets/images/products/productimage6.png";
   static const String productimage7 = "assets/images/products/productimage7.png";
   static const String productimage8 = "assets/images/products/productimage8.png";
-  static const String productimage9 = "assets/images/products/productimage9.png";
-  static const String productimage10 = "assets/images/products/productimage10.png";
-  static const String productimage11 = "assets/images/products/productimage11.png";
-  static const String productimage12 = "assets/images/products/productimage12.png";
-  static const String productimage13 = "assets/images/products/productimage13.png";
-  static const String productimage14 = "assets/images/products/productimage14.png";
-  static const String productimage15 = "assets/images/products/productimage15.png";
-  // static const String productimage16 = "assets/images/products/productimage16.png";
-  // static const String productimage17 = "assets/images/products/productimage17.png";
+  // static const String productimage9 = "assets/images/products/productimage9.png";
+  // static const String productimage10 = "assets/images/products/productimage10.png";
+  // static const String productimage11 = "assets/images/products/productimage11.png";
+  // static const String productimage12 = "assets/images/products/productimage12.png";
+  // static const String productimage13 = "assets/images/products/productimage13.png";
+  // static const String productimage14 = "assets/images/products/productimage14.png";
+  // static const String productimage15 = "assets/images/products/productimage15.png";
+  // // static const String productimage16 = "assets/images/products/productimage16.png";
+  // // static const String productimage17 = "assets/images/products/productimage17.png";
 
 
 }

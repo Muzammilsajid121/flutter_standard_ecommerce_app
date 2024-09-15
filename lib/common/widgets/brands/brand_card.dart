@@ -35,14 +35,15 @@ class TBrandCards extends StatelessWidget {
               //icon
               Flexible(
                   child: TCicluarImage(
-                image: TImages.cloth,
+                image: TImages.clothes,
                 isnetworkimage: false,
+                height: 30,
                 backgroundcolor: Colors.transparent,
                 overlaycolor: THelperFucntion.isDarkMode(context)
                     ? TColors.white
                     : TColors.black,
               )),
-              SizedBox(height: TSizes.defaultSpaceBtwSection / 2),
+              SizedBox(width: TSizes.defaultSpaceBtwSection / 3),
 
               /// Text
               Expanded(

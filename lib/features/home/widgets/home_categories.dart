@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/image_text/horizontal_image_text.dart';
+import 'package:flutter_standard_ecommerce_app/features/shop/sub_category/sub_category.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
 import 'package:get/get.dart';
 
