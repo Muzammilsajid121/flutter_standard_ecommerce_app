@@ -8,9 +8,11 @@ import 'package:flutter_standard_ecommerce_app/common/widgets/search_container.d
 import 'package:flutter_standard_ecommerce_app/common/widgets/texts/section_heading.dart';
 import 'package:flutter_standard_ecommerce_app/features/home/widgets/home_categories.dart';
 import 'package:flutter_standard_ecommerce_app/features/home/widgets/promo_slider.dart';
+import 'package:flutter_standard_ecommerce_app/features/shop/all_products/all_products.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/text_strings.dart';
+import 'package:get/get.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -64,7 +66,7 @@ class HomeScreen extends StatelessWidget {
          const SizedBox(height: TSizes.defaultSpaceBtwSection,),
 
          //Headings
-         TSectionHeading(title: 'Popular Products', onPressed: (){}),
+         TSectionHeading(title: 'Popular Products', onPressed: (){Get.to( ()=> AllProducts()); }),
          const SizedBox(height: TSizes.defaultSpaceBtwSection,),
          
         //Brands Grid -- popular product vertical card video 16
