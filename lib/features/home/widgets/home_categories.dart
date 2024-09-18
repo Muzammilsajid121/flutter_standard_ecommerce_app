@@ -17,7 +17,7 @@ class THomeCategories extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           itemBuilder: (_, index) {
             return THorizontalImageTextScroll(
-              image: TImages.shoe,
+              image: TImages.productimage1,
               title: 'Shoes',
               OnTap: ()=> Get.to( ()=> SubCategoriesScreen()),
             );

@@ -46,6 +46,16 @@ class LoginScreen extends StatelessWidget {
 
     // calling footer google and facebook icons from common widgets
     TSocialButton(),
+
+      ],  
+      ),
+    )
+    )
+    );
+  }
+}
+
+   
   //  ! warning comment
   // -- this is org
   //* Dark green comments
@@ -60,15 +70,3 @@ class LoginScreen extends StatelessWidget {
   // alt+arrow to change the position of line
   // cntrl+H to find and replace
   // cntrl+d to duplicate lines
- // 12:52 done
-  
-
-
-            ],
-        
-      ),
-    )
-    )
-    );
-  }
-}

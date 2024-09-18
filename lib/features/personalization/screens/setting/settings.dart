@@ -21,7 +21,7 @@ class SettingScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            //Header
+            //-- Header
             TPrimaryHeaderContainer(
               child: Column(
               children: [

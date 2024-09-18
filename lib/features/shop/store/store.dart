@@ -128,11 +128,11 @@ class StoreScreen extends StatelessWidget {
   //Tabs --video 18 
           bottom:TTabBar(
           tabs: [
-          Tab(child: Text("Sports"),),
-          Tab(child: Text("Furniture"),),
-          Tab(child: Text("Electronics"),),
-          Tab(child: Text("Clothes"),),
-          Tab(child: Text("Cosmetics"),),
+          Tab(child: Text("Sports",style: Theme.of(context).textTheme.bodyMedium,),),
+          Tab(child: Text("Furniture",style: Theme.of(context).textTheme.bodyMedium),),
+          Tab(child: Text("Electronics",style: Theme.of(context).textTheme.bodyMedium),),
+          Tab(child: Text("Clothes",style: Theme.of(context).textTheme.bodyMedium),),
+          Tab(child: Text("Cosmetics",style: Theme.of(context).textTheme.bodyMedium),),
       
         ]
         )

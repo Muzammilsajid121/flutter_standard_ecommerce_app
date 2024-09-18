@@ -27,8 +27,8 @@ class TPromoSlider extends StatelessWidget {
         ),
         items: [
           TRoundedpromoimage(imageUrl: TImages.promobannerone,),
-          TRoundedpromoimage(imageUrl: TImages.promobannertwo,),
           TRoundedpromoimage(imageUrl: TImages.promobannerthree,),
+          TRoundedpromoimage(imageUrl: TImages.promobannertwo,),
           TRoundedpromoimage(imageUrl: TImages.promobannerfour,),
           TRoundedpromoimage(imageUrl: TImages.promobannerfive,),
         ],

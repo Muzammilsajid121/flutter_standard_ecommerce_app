@@ -20,7 +20,7 @@ class UserReviewCard extends StatelessWidget {
           children: [
             Row(
               children: [
-                CircleAvatar(backgroundImage: AssetImage(TImages.user4), ),
+                CircleAvatar(backgroundImage: AssetImage(TImages.user2), ),
                 SizedBox( width: TSizes.defaultSpaceBtwItem,),
                 Text('Priya',style: Theme.of(context).textTheme.titleSmall,)
               ],

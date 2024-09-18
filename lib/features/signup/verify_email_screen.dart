@@ -42,7 +42,7 @@ Text('support@codetoflutter.com', style: Theme.of(context).textTheme.bodyMedium,
 Text( TText.confirEmailSubTitle,style: Theme.of(context).textTheme.bodySmall, textAlign: TextAlign.center,),
  const SizedBox(height: TSizes.defaultSpaceBtwSection,),
 
-//Continue Button
+//-- Continue Button
   SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){Get.to(() =>  SuccessScreen(
   image: TImages.success,
   title: TText.yourAccountCreatedTitle,
@@ -54,7 +54,7 @@ Text( TText.confirEmailSubTitle,style: Theme.of(context).textTheme.bodySmall, te
  child: const Text(TText.continues))),
 
  const SizedBox(height: TSizes.defaultSpaceBtwItem,),
-//Resend Email Button
+//-- Resend Email Button
 SizedBox(width: double.infinity, child: OutlinedButton(onPressed: (){}, child: Text(TText.resendEmail))),
 
               

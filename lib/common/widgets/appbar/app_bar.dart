@@ -1,6 +1,3 @@
-// //alt shift f to algin
-// This is a custom appbar
-
 import 'package:flutter/material.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/device/device_utility.dart';
@@ -42,3 +39,5 @@ class TAppBar extends StatelessWidget implements PreferredSizeWidget {
   //implement preferredSize
   Size get preferredSize => Size.fromHeight(TDeviceUtils.getAppbarHeight());
 }
+
+

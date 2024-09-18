@@ -7,7 +7,6 @@ import 'package:flutter_standard_ecommerce_app/common/widgets/texts/section_head
 import 'package:flutter_standard_ecommerce_app/features/shop/brand/brand_products.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class AllBrandsScreen extends StatelessWidget {
   const AllBrandsScreen({super.key});

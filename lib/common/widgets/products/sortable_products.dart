@@ -5,16 +5,19 @@ import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:iconsax/iconsax.dart';
 
 class TSortableProducts extends StatelessWidget {
-  const TSortableProducts({
-    super.key,
-  });
-
+  const TSortableProducts({super.key,});
   @override
+
   Widget build(BuildContext context) {
+    // final THelperFucntion.isDarkMode;
     return Column(
       children: [
         //-- Dropdown
         DropdownButtonFormField(
+          // --! change dropdown color
+          dropdownColor: Colors.grey,
+          style: Theme.of(context).textTheme.bodyMedium,
+          menuMaxHeight: 230,
           decoration: const InputDecoration(
             prefixIcon: Icon(Iconsax.sort),
           ),

@@ -2,37 +2,36 @@
 
 class TImages{
 
-  //App logos
+  //-- App Launcher Icon
   static const String darkApplogo = 'assets/logos/appicondark.png';
   static const String lightApplogo = 'assets/logos/appiconlight.png';
 
-  //Login Screen related
+  //-- Login Screen related
   static const String googlelogo = 'assets/logos/google.png';
   static const String facebooklogo = 'assets/logos/facebook1.png';
   static const String emaildeliver = 'assets/logos/emaildelivered.png';
   static const String success = 'assets/logos/success.png';
 
 
-  //Social logos
-  static const String social1 = 'assets/logos/logoimagenameindark';
-  static const String social2 = 'assetrs/logos/inwhite.png';
+  // //Social logos
+  // static const String social1 = 'assets/logos/logoimagenameindark';
+  // static const String social2 = 'assetrs/logos/inwhite.png';
 
   //user profile images
     static const String user1 = 'assets/images/users/user1.jpg';
     static const String user2 = 'assets/images/users/user2.jpg';
     static const String user3 = 'assets/images/users/user3.jpg';
-    static const String user4 = 'assets/images/users/user4.jpg';
-    static const String user5 = 'assets/images/users/user5.jpg';
+    // static const String user4 = 'assets/images/users/user4.jpg';
+    // static const String user5 = 'assets/images/users/user5.jpg';
 
 
 
 
 
-  //Onboarding animations
-    static const String onboardingimage1 = 'assets/animations/onboard1.json';
+  //-- Onboarding animations
     static const String onboardingimage2 = 'assets/animations/onboard2.json';
     static const String onboardingimage3 = 'assets/animations/onboard3.json';
-    static const String onboardingimage4 = 'assets/animations/onboard4.json'; 
+    static const String onboardingimage1 = 'assets/animations/onboard1.json'; 
 
   //Categories Icons
    static const String animal = 'assets/icons/categories/animal.svg';
@@ -55,14 +54,17 @@ class TImages{
 
 
   //promo banners home screen
-  static const String promobannerone = 'assets/images/banners/promobannerone.jpg';
-  static const String promobannertwo = 'assets/images/banners/promobannertwo.jpg';
-  static const String promobannerthree ='assets/images/banners/promobannerthree.jpg';
-  static const String promobannerfour ='assets/images/banners/promobannerfour.jpg';
-  static const String promobannerfive ='assets/images/banners/promobannerfive.jpg';
+  static const String promobannerone = 'assets/images/banners/promobanner1.jpg';
+  static const String promobannertwo = 'assets/images/banners/promobanner2.jpg';
+  static const String promobannerthree ='assets/images/banners/promobanner3.jpg';
+  static const String promobannerfour ='assets/images/banners/promobanner4.jpg';
+  static const String promobannerfive ='assets/images/banners/promobanner5.jpg';
   static const String promobannersix ='assets/images/banners/promobannersix.jpg';
-  static const String promobannerseven ='assets/images/banners/promobannerseven.jpg';
-  static const String promobannereight ='assets/images/banners/promobannereight.jpg';
+  // static const String promobannerseven ='assets/images/banners/promobanner7.jpg';
+  // static const String promobannereight ='assets/images/banners/promobanner8.jpg';
+  // static const String promobannernine ='assets/images/banners/promobanner9.jpg';
+  // static const String promobannerten ='assets/images/banners/promobanner10.jpg';
+
 
   // products images
   static const String productimage1 = "assets/images/products/productimage1.png";

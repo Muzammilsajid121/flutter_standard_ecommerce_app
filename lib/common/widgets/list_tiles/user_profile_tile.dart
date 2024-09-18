@@ -14,10 +14,10 @@ class TUserProfileTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: TCicluarImage(
-        image: TImages.user1,width: 40, height: 40, padding: 0,
+        image: TImages.user3,width: 40, height: 40, padding: 0,
       ),
 
-title: Text('MuzammilsXF',style: Theme.of(context).textTheme.bodyMedium!.apply(color: TColors.white),),
+title: Text('Code to Flutter',style: Theme.of(context).textTheme.bodyMedium!.apply(color: TColors.white),),
 subtitle: Text('codetoflutter@gmail.com',
 style:Theme.of(context).textTheme.bodySmall),
 trailing: IconButton( onPressed: onPressed,icon: Icon(Iconsax.edit,color: TColors.white,),),

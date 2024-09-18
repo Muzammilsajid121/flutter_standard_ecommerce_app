@@ -27,13 +27,14 @@ final VoidCallback onPressed;
                height: THelperFucntion.screenHeight()*0.3,),
               const SizedBox(height: TSizes.defaultSpaceBtwSection,),
         
-        // Title & Subtitle
+        //-- Title & Subtitle
         Text( title, style: Theme.of(context).textTheme.bodyLarge, textAlign: TextAlign.center, ),
         const SizedBox( height: TSizes.defaultSpaceBtwItem,),
         
-        Text(subtitle, style: Theme.of(context).textTheme.bodyMedium,textAlign: TextAlign.center,),     
+        Text(subtitle, style: Theme.of(context).textTheme.bodySmall,textAlign: TextAlign.center,),     
+         SizedBox(height: TSizes.defaultSpaceBtwSection),
 
-        //Continue Button
+        //--Continue Button
         SizedBox(width: double.infinity, child: ElevatedButton(onPressed: onPressed, 
         child: Text(TText.continues))),
 

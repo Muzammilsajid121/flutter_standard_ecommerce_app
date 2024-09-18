@@ -37,7 +37,7 @@ class THorizontalImageTextScroll extends StatelessWidget {
                       backgroundColor ?? (dark ? TColors.black : TColors.white),
                   borderRadius: BorderRadius.circular(100)),
               child: Center(
-                child: SvgPicture.asset(
+                child: Image.asset(
                   image,height: 40,width: 40,
                   // color: dark ? TColors.black : TColors.white,
                   fit: BoxFit.cover,

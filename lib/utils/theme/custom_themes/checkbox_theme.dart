@@ -58,27 +58,4 @@ class TCheckboxTheme {
   );
 
 
-  // //FOR DARK THEME
-  // static CheckboxThemeData darkCheckTheme = CheckboxThemeData(
-  //     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-  //     checkColor: WidgetStateProperty.resolveWith((states) {
-  //       //if checkbox selected(check color)
-  //       if (states.contains(WidgetState.selected)) {
-  //         return Colors.white;
-  //       } else {
-  //         return Colors.black;
-  //       }
-  //     }),
-  //     //whole checkbox background color
-  //     fillColor: WidgetStateProperty.resolveWith((states) {
-  //       if (states.contains(WidgetState.selected)) {
-  //         return Colors.blue;
-  //       } else {
-  //         return Colors.grey;
-  //       }
-  //     }));
-
-
-
-
 }
