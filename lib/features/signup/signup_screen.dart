@@ -27,7 +27,7 @@ class SignupScreen extends StatelessWidget {
       Text(TText.sigupTitle, style: Theme.of(context).textTheme.titleMedium,),
       const SizedBox(height: TSizes.defaultSpaceBtwSection,),
 
-    // //calling from signup widgets
+    //-- calling from signup widgets
     SignupForm(),
     SizedBox(height: TSizes.defaultSpaceBtwSection,),
 
@@ -35,9 +35,7 @@ class SignupScreen extends StatelessWidget {
     SignupTermsCondition(),
 
     SizedBox(height: TSizes.defaultSpaceBtwSection,),
-    //Create Account Button
-    SizedBox(width: double.infinity, child: OutlinedButton(onPressed: (){
-      Get.to(()=> VerifyEmailScreen()); }, child: Text(TText.createAccount))),
+
 
       
     SizedBox(height: TSizes.defaultSpaceBtwSection,),

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/helpers/herlper_functions.dart';
-import 'package:flutter_svg/svg.dart';
 
 class THorizontalImageTextScroll extends StatelessWidget {
   const THorizontalImageTextScroll(

@@ -1,7 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_standard_ecommerce_app/features/on_boarding/on_boarding_screen.dart';
-import 'package:flutter_standard_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_standard_ecommerce_app/utils/theme/theme.dart';
 import 'package:get/get.dart';
 

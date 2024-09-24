@@ -1,17 +1,31 @@
 // import 'package:validators/validators.dart';
 
 class Tvalidator {
+
+  //-- Empty text validation
+  static String? validateEmptyText (String? fieldName, String? value){
+    if(value == null || value.isEmpty){
+      return '$fieldName is required' ;
+    }
+    return null;
+  }
+
   static String? validateEmail(String? value) {
+
     if (value == null || value.isEmpty) {
       return 'Email is required';
     }
-//regular expreestin for email validation
+
+//regular expression for email validation | if email matches the pattern
     final emailRegExp = RegExp(r'^[\w-\.]\+@([\w-]+\.)+[\w-]{2,4}$');
+
     if (!emailRegExp.hasMatch(value)) {
-      return null;
+      return 'Invalid Email Adress' ;
     }
+      return null;
   }
 
+// -- password criteria
   static String? validatePassword(String? value) {
     if (value == null || value.isEmpty) {
       return 'Password  is required';
@@ -19,21 +33,20 @@ class Tvalidator {
     if (value.length < 6) {
       return 'Password must be at 6 charactor long';
     }
-// for number
     if (!value.contains(RegExp(r'[0-9]'))) {
       return 'Password must be at Least one number';
     }
-// for upercase use in passwoed
     if (!value.contains(RegExp(r'[A-Z]'))) {
       return 'Password must be at one Upper case';
     }
-// your can more thing like specail charactor for the same things
+// you can add more thing like specail charactor for the same things
     return null;
   }
 
+//-- Phone number criteria
   static String? validatPhoneNumber(String? value) {
     if (value == null || value.isEmpty) {
-      return 'Phone is required ';
+      return 'Phone Number is required ';
     }
     // Regulor expression for phone number validation
     final phoneRegExp = RegExp(r'^\d{11}$');
