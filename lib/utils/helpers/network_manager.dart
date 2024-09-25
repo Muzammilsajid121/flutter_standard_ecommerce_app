@@ -1,15 +1,16 @@
-
+import 'dart:async';
+import 'package:flutter_standard_ecommerce_app/utils/popups/loaders_sncakbars.dart';
+import 'package:get/get.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/services.dart';
-import 'package:get/get.dart';
 
 /// Manages the network connectivity status and provides methods to check and handle connectivity changes.
 class NetworkManager extends GetxController {
   static NetworkManager get instance => Get.find();
 
   final Connectivity _connectivity = Connectivity();
-  late StreamSubscription<ConnectivityResult> _connectivitySubscription;
-  final Rx<ConnectivityResult> _connectionStatus = ConnectivityResult.none.obs;
+  late StreamSubscription<List<ConnectivityResult>> _connectivitySubscription;
+  final RxList<ConnectivityResult> _connectionStatus = <ConnectivityResult>[].obs;
 
   /// Initialize the network manager and set up a stream to continually check the connection status.
   @override
@@ -19,10 +20,10 @@ class NetworkManager extends GetxController {
   }
 
   /// Update the connection status based on changes in connectivity and show a relevant popup for no internet connection.
-  Future<void> _updateConnectionStatus(ConnectivityResult result) async {
+  Future<void> _updateConnectionStatus(List<ConnectivityResult> result) async {
     _connectionStatus.value = result;
-    if (_connectionStatus.value == ConnectivityResult.none) {
-      TLoaders.warningSnackBar(title: 'No Internet Connection');
+    if (result.contains(ConnectivityResult.none)) {
+      TLoaders.customToast(message: 'No Internet Connection');
     }
   }
 
@@ -31,7 +32,7 @@ class NetworkManager extends GetxController {
   Future<bool> isConnected() async {
     try {
       final result = await _connectivity.checkConnectivity();
-      if (result == ConnectivityResult.none) {
+      if (result.any((element) => element == ConnectivityResult.none)) {
         return false;
       } else {
         return true;
@@ -39,5 +40,12 @@ class NetworkManager extends GetxController {
     } on PlatformException catch (_) {
       return false;
     }
+  }
+
+  /// Dispose or close the active connectivity stream.
+  @override
+  void onClose() {
+    super.onClose();
+    _connectivitySubscription.cancel();
   }
 }
