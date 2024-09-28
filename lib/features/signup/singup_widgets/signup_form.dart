@@ -11,7 +11,7 @@ class SignupForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //-- Instance of Signup controller / Accessing signup controller
+    //-- Instance of Signup controller / Registering signup controller
     final controller = Get.put(SignupController());
 
     return Form(
@@ -83,16 +83,24 @@ class SignupForm extends StatelessWidget {
               ),
   
     SizedBox(height: TSizes.spaceBtwInputFields,),
-   //PASSWORD
-    TextFormField(
-      controller: controller.password,
-      validator: (value) => Tvalidator.validatePassword(value),
-      decoration: InputDecoration(
-      labelText: TText.password,
-      prefixIcon: Icon(Iconsax.password_check),
-      suffixIcon: IconButton(onPressed: (){}, icon: Icon(Iconsax.eye_slash))
-               ),
-              ),
+
+   //-- PASSWORD
+    Obx(
+     ()=> TextFormField(
+        controller: controller.password,
+        validator: (value) => Tvalidator.validatePassword(value),
+        obscureText: controller.hidePassword.value,
+        decoration: InputDecoration(
+        labelText: TText.password,
+        prefixIcon: Icon(Iconsax.password_check),
+        suffixIcon: IconButton(onPressed: (){
+          controller.hidePassword.value = !controller.hidePassword.value;
+        }, 
+        icon: Icon(controller.hidePassword.value? Iconsax.eye_slash: Iconsax.eye))
+                 ),
+                ),
+    ),
+    SizedBox(height: TSizes.defaultSpaceBtwItem,),
     
     //-- Create Account Button
     SizedBox(width: double.infinity,

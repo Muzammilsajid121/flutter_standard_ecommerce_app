@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_standard_ecommerce_app/features/authentication/controllers/signup/signup_controller.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter_standard_ecommerce_app/utils/helpers/herlper_functions.dart';
+import 'package:get/get.dart';
 
 class SignupTermsCondition extends StatelessWidget {
   const SignupTermsCondition({super.key});
@@ -9,10 +11,17 @@ class SignupTermsCondition extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
   final isdark = THelperFucntion.isDarkMode(context);
+  final controller = SignupController.instance ; //-- using the old controller instance
 
     return   Row(
       children: [
-        Checkbox(value: true, onChanged: (value) {}),
+        //-- checkbox
+        Obx( 
+          ()=> Checkbox(value: controller.privacyPolicy.value,
+           onChanged: (value) {
+            controller.privacyPolicy.value = !controller.privacyPolicy.value;
+          })),
+
         // const SizedBox( width: TSizes.defaultSpaceBtwItem, ),
 
 //TEXTSPANS

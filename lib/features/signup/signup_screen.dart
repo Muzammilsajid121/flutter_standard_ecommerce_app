@@ -3,10 +3,8 @@ import 'package:flutter_standard_ecommerce_app/common/widgets/form_devider.dart'
 import 'package:flutter_standard_ecommerce_app/common/widgets/social_button.dart';
 import 'package:flutter_standard_ecommerce_app/features/signup/singup_widgets/signup_form.dart';
 import 'package:flutter_standard_ecommerce_app/features/signup/singup_widgets/signup_terms_condition.dart';
-import 'package:flutter_standard_ecommerce_app/features/signup/verify_email_screen.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/text_strings.dart';
-import 'package:get/get.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});

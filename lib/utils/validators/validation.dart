@@ -10,6 +10,7 @@ class Tvalidator {
     return null;
   }
 
+  //-- Email validation
   static String? validateEmail(String? value) {
 
     if (value == null || value.isEmpty) {
@@ -17,7 +18,7 @@ class Tvalidator {
     }
 
 //regular expression for email validation | if email matches the pattern
-    final emailRegExp = RegExp(r'^[\w-\.]\+@([\w-]+\.)+[\w-]{2,4}$');
+    final emailRegExp = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
 
     if (!emailRegExp.hasMatch(value)) {
       return 'Invalid Email Adress' ;

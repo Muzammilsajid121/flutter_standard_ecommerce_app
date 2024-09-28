@@ -21,7 +21,6 @@ class AuthenticationRepository extends GetxController{
   screenRedirect() async{
     //Local Storage
     deviceStorage.writeIfNull('isFirstTime', true);  // if there is nothing added in this key
-
     // IF first time take to on boarding screen
     deviceStorage.read('isFirstTime') != true?
       Get.offAll( ()=>LoginScreen()) : Get.offAll( ()=> OnBoardingScreen());
