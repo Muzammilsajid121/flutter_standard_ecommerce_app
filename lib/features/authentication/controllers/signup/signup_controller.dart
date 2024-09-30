@@ -1,4 +1,3 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_standard_ecommerce_app/data/repositories/authentication/authentication_repository.dart';
 import 'package:flutter_standard_ecommerce_app/data/repositories/user/user_model.dart';
@@ -29,21 +28,32 @@ class SignupController extends GetxController {
   void signup() async {
     try {
       //-- Start Loading
-      TFullScreenLaoder.openLoadingDialog('We are processing your information', TImages.decorImage);
+      TFullScreenLaoder.openLoadingDialog('We are processing your information', TImages.loading);
 
       //-- Check Internet Connectivity
       final isConnected = await NetworkManager.instance.isConnected();
-      if(!isConnected) return;
+      if(!isConnected){
+        debugPrint('No Internet');
+        TFullScreenLaoder.stopLoading();
+       
+        return;
+      } 
       
 
       //-- Form Validation
-      if(signupFormKey.currentState!.validate()) return;
+      if(!signupFormKey.currentState!.validate()){
+        debugPrint('No validation');
+        TFullScreenLaoder.stopLoading();
+        return;
+      } 
 
       //-- Privacy Policy Check
       if(!privacyPolicy.value){
         TLoaders.warningSnackBar(
           title: 'Accept Privacy Policy',
           message: 'In order to create account read and accept privacy policy');
+          debugPrint('No Privacy');
+          TFullScreenLaoder.stopLoading();
           return;
       }
 
@@ -66,7 +76,7 @@ class SignupController extends GetxController {
 
   //-- Remove Loader
   TFullScreenLaoder.stopLoading();
-  
+
   //-- Show Success Message
   TLoaders.successSnackBar(title: "Congratulations!", message: "Your account has been created! Verify your email to continue.");
 

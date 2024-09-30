@@ -6,6 +6,7 @@ import 'package:flutter_standard_ecommerce_app/utils/exceptions/firebase_excepti
 import 'package:flutter_standard_ecommerce_app/utils/exceptions/format_exceptions.dart';
 import 'package:flutter_standard_ecommerce_app/utils/exceptions/platform_exceptions.dart';
 import 'package:get/get.dart';
+//!firestore rules should be true
 
 class UserRepository extends GetxController {
   static UserRepository get instance => Get.find();

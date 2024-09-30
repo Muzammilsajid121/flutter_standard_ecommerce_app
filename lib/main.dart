@@ -11,7 +11,7 @@ import 'firebase_options.dart';
 Future<void> main() async {
   runApp(const MyApp());
 
-  //TODOS
+//TODOS
   
 //--add widgets bindings
 final WidgetsBinding widgetsBinding =WidgetsFlutterBinding.ensureInitialized();
@@ -27,7 +27,6 @@ await Firebase.initializeApp( options: DefaultFirebaseOptions.currentPlatform).t
   //--- Once firebase intialization is done related to any platform, the AuthenticationRepository decide the state of the app either user loged in or loged out and manage to show which screen first
   (FirebaseApp Value) => Get.put(AuthenticationRepository())
 );
-
 
   //initialize authentication
 }

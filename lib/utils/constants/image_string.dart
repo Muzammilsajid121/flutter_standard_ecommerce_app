@@ -22,9 +22,10 @@ class TImages{
     static const String user2 = 'assets/images/users/user2.jpg';
     static const String user3 = 'assets/images/users/user3.jpg';
 
-  //backend
-    static const String decorImage = 'assets/images/users/user4.jpg';  //! bhai dekh
-    // static const String user5 = 'assets/images/users/user5.jpg';
+  //backend loader animation
+    static const String loading = 'assets/animations/loading.json';  //! bhai dekh
+    static const String fake = 'assets/animations/loadings.json';  //! bhai dekh
+
 
 
 

@@ -4,7 +4,6 @@ import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_standard_ecommerce_app/features/login/logins_screen.dart';
 import 'package:flutter_standard_ecommerce_app/features/on_boarding/on_boarding_screen.dart';
 import 'package:flutter_standard_ecommerce_app/utils/exceptions/firebase_auth_exceptions.dart';
-import 'package:flutter_standard_ecommerce_app/utils/exceptions/firebase_exceptions.dart';
 import 'package:flutter_standard_ecommerce_app/utils/exceptions/format_exceptions.dart';
 import 'package:flutter_standard_ecommerce_app/utils/exceptions/platform_exceptions.dart';
 import 'package:get/get.dart';
@@ -27,7 +26,7 @@ class AuthenticationRepository extends GetxController{
   //-- Function to show relevant screen
   screenRedirect() async{
     //Local Storage
-    deviceStorage.writeIfNull('isFirstTime', true);  // if there is nothing added in this key
+    deviceStorage.writeIfNull('isFirstTime', true);  // write in local storage that this is first time
     // IF first time take to on boarding screen
     deviceStorage.read('isFirstTime') != true?
       Get.offAll( ()=>LoginScreen()) : Get.offAll( ()=> OnBoardingScreen());

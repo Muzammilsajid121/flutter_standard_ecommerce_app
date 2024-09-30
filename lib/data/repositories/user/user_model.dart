@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_standard_ecommerce_app/utils/formatters/formatters.dart';
 
 class UserModel {
-  // Keep those values final which you do not want to update
+  // Keep those values final which you do not want to update : user can update non final values from profile settings
   final String id;
   String firstName;
   String lastName;
