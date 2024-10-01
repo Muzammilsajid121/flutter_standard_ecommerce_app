@@ -19,15 +19,15 @@ final WidgetsBinding widgetsBinding =WidgetsFlutterBinding.ensureInitialized();
 //-- initialized loacal GetX storage
 await GetStorage.init();
 
-//-- await native splash
+//-- await native splash untill other items load
 FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
-//-- initialize firebase
+//-- initialize firebase & Authentication Repository
 await Firebase.initializeApp( options: DefaultFirebaseOptions.currentPlatform).then(
   //--- Once firebase intialization is done related to any platform, the AuthenticationRepository decide the state of the app either user loged in or loged out and manage to show which screen first
   (FirebaseApp Value) => Get.put(AuthenticationRepository())
 );
 
-  //initialize authentication
+//-- Load all the material designs, theme, localization, bindings
 }
 

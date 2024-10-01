@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_standard_ecommerce_app/features/authentication/controllers/signup/verify_email_controller.dart';
 import 'package:flutter_standard_ecommerce_app/features/login/logins_screen.dart';
 import 'package:flutter_standard_ecommerce_app/features/signup/success_screen.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
@@ -9,10 +10,14 @@ import 'package:flutter_standard_ecommerce_app/utils/helpers/herlper_functions.d
 import 'package:get/get.dart';
 
 class VerifyEmailScreen extends StatelessWidget {
-  const VerifyEmailScreen({super.key});
+  const VerifyEmailScreen({super.key, this.email});
+
+  final String? email;
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(VerifyEmailController());
+
     return  Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false, //hide back arrow
@@ -36,26 +41,28 @@ body: Padding( padding: const EdgeInsets.all(TSizes.defaultSpace),
 Text( TText.confirmEmail, style: Theme.of(context).textTheme.bodyLarge, textAlign: TextAlign.center, ),
 const SizedBox( height: TSizes.defaultSpaceBtwItem,),
 
-Text('support@codetoflutter.com', style: Theme.of(context).textTheme.bodyMedium,textAlign: TextAlign.center,),
+Text(email?? '', style: Theme.of(context).textTheme.bodyMedium,textAlign: TextAlign.center,),
  const SizedBox(height: TSizes.defaultSpaceBtwItem, ),
 
 Text( TText.confirEmailSubTitle,style: Theme.of(context).textTheme.bodySmall, textAlign: TextAlign.center,),
  const SizedBox(height: TSizes.defaultSpaceBtwSection,),
 
 //-- Continue Button
-  SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){Get.to(() =>  SuccessScreen(
-  image: TImages.success,
-  title: TText.yourAccountCreatedTitle,
-  subtitle: TText.yourAccountCreatedSubTitle,
-  onPressed: () => Get.to(()=>LoginScreen()) ,
-
-  
-));},
- child: const Text(TText.continues))),
+  SizedBox(
+    width: double.infinity,
+    child: ElevatedButton(
+    onPressed: ()=> controller.checkEmailVerificationStatus ,
+    child: const Text(TText.continues)
+    )),
 
  const SizedBox(height: TSizes.defaultSpaceBtwItem,),
+
 //-- Resend Email Button
-SizedBox(width: double.infinity, child: OutlinedButton(onPressed: (){}, child: Text(TText.resendEmail))),
+SizedBox(
+  width: double.infinity,
+  child: OutlinedButton(
+  onPressed: ()=> controller.sendEmailVerification,
+  child: Text(TText.resendEmail))),
 
               
             ],),

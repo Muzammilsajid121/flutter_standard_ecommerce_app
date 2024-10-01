@@ -73,7 +73,6 @@ class UserModel {
       profilePicture: data['ProfilePicture'] ?? '',
     );
   }
-  
   else{ return UserModel.empty(); }
 }
 

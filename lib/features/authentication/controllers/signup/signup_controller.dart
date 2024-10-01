@@ -62,7 +62,7 @@ class SignupController extends GetxController {
 
   //--  Save Authenticated user data in the Firebase Firestore
   final newUser = UserModel(
-  id: userCredential!.user!.uid,            //! checl this lineeee done alone
+  id: userCredential!.user!.uid,            
   firstName: firstName.text.trim(),
   lastName: lastName.text.trim(),
   username: userName.text.trim(),
@@ -81,7 +81,7 @@ class SignupController extends GetxController {
   TLoaders.successSnackBar(title: "Congratulations!", message: "Your account has been created! Verify your email to continue.");
 
   //--  Move to Verify Email Screen
-  Get.to(()=> const VerifyEmailScreen());
+  Get.to(()=> const VerifyEmailScreen(email: 'email',));
 
 
   } catch (e) {
