@@ -9,7 +9,6 @@ import 'firebase_options.dart';
 
 
 Future<void> main() async {
-  runApp(const MyApp());
 
 //TODOS
   
@@ -29,5 +28,8 @@ await Firebase.initializeApp( options: DefaultFirebaseOptions.currentPlatform).t
 );
 
 //-- Load all the material designs, theme, localization, bindings
+
+runApp(const MyApp());
+
 }
 
