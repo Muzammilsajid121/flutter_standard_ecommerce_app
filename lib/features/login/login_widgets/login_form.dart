@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_standard_ecommerce_app/features/authentication/controllers/login/login_controller.dart';
 import 'package:flutter_standard_ecommerce_app/features/authentication/password_configuration/forgot_password.dart';
 import 'package:flutter_standard_ecommerce_app/features/signup/signup_screen.dart';
-import 'package:flutter_standard_ecommerce_app/navigation_menu.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter_standard_ecommerce_app/utils/validators/validation.dart';
@@ -82,9 +81,10 @@ class LoginForm extends StatelessWidget {
 
                          const SizedBox(height: TSizes.defaultSpaceBtwSection,),
                  
-                         //Signin button
+                         //-- Signin button
                          SizedBox( width: double.infinity,
-                         child: ElevatedButton(onPressed: (){ Get.to(()=>NavigationMenu());},
+                         child: ElevatedButton(
+                         onPressed: ()=> controller.emailAndPasswordSignIn(),
                          child: const Text(TText.signIn))),
                          const SizedBox(height: TSizes.defaultSpaceBtwItem,),
 
