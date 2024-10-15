@@ -1,16 +1,25 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_standard_ecommerce_app/features/authentication/controllers/forget_password/forget_password_controller.dart';
+import 'package:flutter_standard_ecommerce_app/features/authentication/password_configuration/forgot_password_screen.dart';
+import 'package:flutter_standard_ecommerce_app/features/login/logins_screen.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter_standard_ecommerce_app/utils/helpers/herlper_functions.dart';
+import 'package:get/get.dart';
 
-class ResetPassword extends StatelessWidget {
-  const ResetPassword({super.key});
+class ResetPasswordScreen extends StatelessWidget {
+  const ResetPasswordScreen({super.key, required this.email});
+
+  final String email;
 
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
+        actions: [IconButton(onPressed: ()=> Get.back, icon: const Icon(CupertinoIcons.clear))],
       ),
     
     body: SingleChildScrollView(
@@ -32,13 +41,16 @@ class ResetPassword extends StatelessWidget {
         const SizedBox(height: TSizes.defaultSpaceBtwSection,),
         
         //Done Button
-        SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){},
+        SizedBox(width: double.infinity, child: ElevatedButton(
+        onPressed: ()=> Get.offAll( ()=> LoginScreen()),
         child: const Text(TText.done))),
         
          const SizedBox(height: TSizes.defaultSpaceBtwItem,),
         
         //Resend Email Button
-        SizedBox(width: double.infinity, child: OutlinedButton(onPressed: (){}, child: Text(TText.resendEmail))),
+        SizedBox(width: double.infinity, child: OutlinedButton(
+        onPressed: ()=> ForgetPasswordController.instance.resendPasswordResetEmail(email),
+        child: Text(TText.resendEmail))),
         
           
         
