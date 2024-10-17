@@ -17,7 +17,7 @@ class ChangeNameScreen extends StatelessWidget {
       // Custom Appbar
       appBar: TAppBar(
         showbackarrow: true,
-        title: Text('Change Name', style: Theme.of(context).textTheme.headlineSmall),
+        title: Text('Change Name', style: Theme.of(context).textTheme.bodyMedium),
       ),
       body: Padding(
         padding: const EdgeInsets.all(TSizes.defaultSpace),
@@ -26,8 +26,8 @@ class ChangeNameScreen extends StatelessWidget {
           children: [
             // Headings
             Text(
-              'Use real name for easy verification. This name will appear on several pages.',
-              style: Theme.of(context).textTheme.labelMedium,
+              'Use real name for easy verification. This name will appear on several screens.',
+              style: Theme.of(context).textTheme.bodyMedium,
             ),
             // Text
             const SizedBox(height: TSizes.defaultSpaceBtwSection),
@@ -37,6 +37,7 @@ class ChangeNameScreen extends StatelessWidget {
               key: controller.updateUserNameFormkey,
               child: Column(
                children: [
+                //fist name
                 TextFormField(
                 controller: controller.firstName,
                 validator: (value) => Tvalidator.validateEmptyText('First name', value),
@@ -44,6 +45,7 @@ class ChangeNameScreen extends StatelessWidget {
                 decoration: const InputDecoration(labelText: TText.firstName, prefixIcon: Icon(Iconsax.user)),
               ),
               const SizedBox(height: TSizes.spaceBtwInputFields),
+                //last name
               TextFormField(
                 controller: controller.lastName,
                 validator: (value) => Tvalidator.validateEmptyText('Last name', value),

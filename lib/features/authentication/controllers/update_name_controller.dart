@@ -33,50 +33,55 @@ class UpdateNameController extends GetxController {
     lastName.text = userController.user.value.lastName;
   }
 
-  Future<void> updateUserName() async {
-    try {
-      // Start Loading
-      TFullScreenLaoder.openLoadingDialog(
-          "We are updating your information...", TImages.loading);
+  //--update user name
+Future<void> updateUserName() async {
+  try {
+    // Start Loading
+    TFullScreenLaoder.openLoadingDialog(
+        "We are updating your information...", TImages.loading);
 
-      // Check Internet Connectivity
-      final isConnected = await NetworkManager.instance.isConnected();
+    // Check Internet Connectivity
+    final isConnected = await NetworkManager.instance.isConnected();
 
-      if (!isConnected) {
-        TFullScreenLaoder.stopLoading();
-        return;
-      }
+    if (!isConnected) {
+      TFullScreenLaoder.stopLoading();
+      return;
+    }
 
-     // Form Validation
-if (updateUserNameFormkey.currentState!.validate()) {
-  TFullScreenLaoder.stopLoading();
-  return;
+    // Form Validation
+    if (updateUserNameFormkey.currentState!.validate()) {
+      // Proceed with updating the user's first & last name in Firebase Firestore
+      Map<String, dynamic> name = {
+        'firstName': firstName.text.trim(),
+        'lastName': lastName.text.trim()
+      };
+
+      //* update single field function called from userRepository with the json 'name'
+      await userRepository.updateSingleField(name);
+
+      // Update the Rx User value
+      userController.user.value.firstName = firstName.text.trim();
+      userController.user.value.lastName = lastName.text.trim();
+
+      // Remove Loader
+      TFullScreenLaoder.stopLoading();
+
+      // Show Success Message
+      TLoaders.successSnackBar(title: "Congratulations", message: "Your Name has been updated.");
+
+      // Move to previous screen
+      Get.off(() => const ProfileScreen());
+    } else {
+      // If validation fails, stop the loader
+      TFullScreenLaoder.stopLoading();
+    }
+  } catch (e) {
+    TFullScreenLaoder.stopLoading();
+    TLoaders.errorSnackBar(title: "Oh Snap!", message: e.toString());
+  }
 }
 
-//-- Update user's first & last name in the Firebase Firestore
-Map<String, dynamic> name = {
-  'firstName': firstName.text.trim(),
-  'lastName': lastName.text.trim()
-};
-//* update single field func called from user rep and json 'name' is given
-await userRepository.updateSingleField(name);
 
-// Update the Rx User value
-userController.user.value.firstName = firstName.text.trim();
-userController.user.value.lastName = lastName.text.trim();
 
-// Remove Loader
-TFullScreenLaoder.stopLoading();
 
-// Show Success Message
-TLoaders.successSnackBar(title: "Congratulations", message: "Your Name has been updated.");
-
-// Move to previous screen
-Get.off(() => const ProfileScreen());
-} catch (e) {
-  TFullScreenLaoder.stopLoading();
-  TLoaders.errorSnackBar(title: "Oh Snap!", message: e.toString());
-}             
-      
-  }
 }
