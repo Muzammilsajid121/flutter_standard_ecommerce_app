@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_standard_ecommerce_app/data/repositories/authentication/authentication_repository.dart';
+import 'package:flutter_standard_ecommerce_app/repositories/authentication_repository.dart';
 import 'package:flutter_standard_ecommerce_app/features/authentication/password_configuration/reset_password_screen.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
 import 'package:flutter_standard_ecommerce_app/utils/helpers/network_manager.dart';

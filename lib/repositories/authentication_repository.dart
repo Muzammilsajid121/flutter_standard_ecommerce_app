@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:flutter_standard_ecommerce_app/data/repositories/user/user_repository.dart';
+import 'package:flutter_standard_ecommerce_app/repositories/user_repository.dart';
 import 'package:flutter_standard_ecommerce_app/features/login/logins_screen.dart';
 import 'package:flutter_standard_ecommerce_app/features/on_boarding/on_boarding_screen.dart';
 import 'package:flutter_standard_ecommerce_app/features/signup/verify_email_screen.dart';

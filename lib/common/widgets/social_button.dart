@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_standard_ecommerce_app/features/authentication/controllers/login/login_controller.dart';
+import 'package:flutter_standard_ecommerce_app/controllers_models/controllers/login_controller.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:get/get.dart';

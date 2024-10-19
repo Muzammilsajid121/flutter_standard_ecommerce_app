@@ -1,8 +1,8 @@
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_standard_ecommerce_app/data/repositories/authentication/authentication_repository.dart';
-import 'package:flutter_standard_ecommerce_app/data/repositories/user/user_model.dart';
+import 'package:flutter_standard_ecommerce_app/repositories/authentication_repository.dart';
+import 'package:flutter_standard_ecommerce_app/controllers_models/models/user_model.dart';
 import 'package:flutter_standard_ecommerce_app/utils/exceptions/firebase_exceptions.dart';
 import 'package:flutter_standard_ecommerce_app/utils/exceptions/format_exceptions.dart';
 import 'package:flutter_standard_ecommerce_app/utils/exceptions/platform_exceptions.dart';

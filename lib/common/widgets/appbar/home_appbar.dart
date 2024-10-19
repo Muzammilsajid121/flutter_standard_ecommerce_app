@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/appbar/app_bar.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/appbar/cart_counter_icon.dart';
-import 'package:flutter_standard_ecommerce_app/data/repositories/authentication/authentication_repository.dart';
-import 'package:flutter_standard_ecommerce_app/features/personalization/controllers/user_controller.dart';
+import 'package:flutter_standard_ecommerce_app/controllers_models/controllers/user_controller.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter_standard_ecommerce_app/utils/shimmer/shimmer_effect.dart';

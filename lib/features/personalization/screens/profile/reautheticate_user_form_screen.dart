@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/appbar/app_bar.dart';
-import 'package:flutter_standard_ecommerce_app/features/authentication/controllers/update_name_controller.dart';
-import 'package:flutter_standard_ecommerce_app/features/personalization/controllers/user_controller.dart';
+import 'package:flutter_standard_ecommerce_app/controllers_models/controllers/update_name_controller.dart';
+import 'package:flutter_standard_ecommerce_app/controllers_models/controllers/user_controller.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter_standard_ecommerce_app/utils/validators/validation.dart';

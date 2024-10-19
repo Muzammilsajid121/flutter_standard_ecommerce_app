@@ -1,7 +1,7 @@
 // Controller to manage user-related functionality
 import 'package:flutter/material.dart';
-import 'package:flutter_standard_ecommerce_app/data/repositories/user/user_repository.dart';
-import 'package:flutter_standard_ecommerce_app/features/personalization/controllers/user_controller.dart';
+import 'package:flutter_standard_ecommerce_app/repositories/user_repository.dart';
+import 'package:flutter_standard_ecommerce_app/controllers_models/controllers/user_controller.dart';
 import 'package:flutter_standard_ecommerce_app/features/personalization/screens/profile/profile.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
 import 'package:flutter_standard_ecommerce_app/utils/helpers/network_manager.dart';

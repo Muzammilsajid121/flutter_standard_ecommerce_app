@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter_standard_ecommerce_app/data/repositories/authentication/authentication_repository.dart';
+import 'package:flutter_standard_ecommerce_app/repositories/authentication_repository.dart';
 import 'package:flutter_standard_ecommerce_app/features/signup/success_screen.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/text_strings.dart';

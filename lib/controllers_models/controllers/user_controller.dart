@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_standard_ecommerce_app/data/repositories/authentication/authentication_repository.dart';
-import 'package:flutter_standard_ecommerce_app/data/repositories/user/user_model.dart';
-import 'package:flutter_standard_ecommerce_app/data/repositories/user/user_repository.dart';
+import 'package:flutter_standard_ecommerce_app/repositories/authentication_repository.dart';
+import 'package:flutter_standard_ecommerce_app/controllers_models/models/user_model.dart';
+import 'package:flutter_standard_ecommerce_app/repositories/user_repository.dart';
 import 'package:flutter_standard_ecommerce_app/features/login/logins_screen.dart';
 import 'package:flutter_standard_ecommerce_app/features/personalization/screens/profile/reautheticate_user_form_screen.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';

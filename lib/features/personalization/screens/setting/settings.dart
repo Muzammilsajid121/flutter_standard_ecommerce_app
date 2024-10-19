@@ -4,7 +4,7 @@ import 'package:flutter_standard_ecommerce_app/common/widgets/appbar/app_bar.dar
 import 'package:flutter_standard_ecommerce_app/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:flutter_standard_ecommerce_app/common/widgets/texts/section_heading.dart';
-import 'package:flutter_standard_ecommerce_app/data/repositories/authentication/authentication_repository.dart';
+import 'package:flutter_standard_ecommerce_app/repositories/authentication_repository.dart';
 import 'package:flutter_standard_ecommerce_app/features/personalization/screens/adress/adress.dart';
 import 'package:flutter_standard_ecommerce_app/features/personalization/screens/profile/profile.dart';
 import 'package:flutter_standard_ecommerce_app/features/shop/order/order.dart';

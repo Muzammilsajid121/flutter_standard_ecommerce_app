@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_standard_ecommerce_app/data/repositories/authentication/authentication_repository.dart';
-import 'package:flutter_standard_ecommerce_app/features/personalization/controllers/user_controller.dart';
+import 'package:flutter_standard_ecommerce_app/repositories/authentication_repository.dart';
+import 'package:flutter_standard_ecommerce_app/controllers_models/controllers/user_controller.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
 import 'package:flutter_standard_ecommerce_app/utils/helpers/network_manager.dart';
 import 'package:flutter_standard_ecommerce_app/utils/popups/full_screen_loader.dart';
