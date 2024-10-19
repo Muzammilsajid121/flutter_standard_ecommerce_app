@@ -1,7 +1,9 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_standard_ecommerce_app/utils/helpers/herlper_functions.dart';
+import 'package:flutter_standard_ecommerce_app/utils/shimmer/shimmer_effect.dart';
 
 class TCicluarImage extends StatelessWidget {
   const TCicluarImage({
@@ -31,14 +33,22 @@ class TCicluarImage extends StatelessWidget {
          color: backgroundcolor ??(THelperFucntion.isDarkMode(context) ? TColors.black : TColors.white),
           borderRadius: BorderRadius.circular(100)
           ),
-          
+
+      // if it first time download image and then afterwards show cached image   
       child: Center(
         child: ClipOval(
-          child: Image(
-          image: isnetworkimage ? NetworkImage(image) : AssetImage(image) as ImageProvider,
+          child: isnetworkimage? CachedNetworkImage(
+            imageUrl: image,
+            fit: fit,
+            color: overlaycolor, 
+            progressIndicatorBuilder: (context, url, downloadProgress) => const TShimmerEffect(width: 56, height: 56),
+            errorWidget: (context, url, error) => const Icon(Icons.error),
+            ) :
+          Image(
+          image: AssetImage(image),
           color: overlaycolor,
-          fit: fit,
-                ),
+          fit: fit, ),
+
         )),
     );
   }

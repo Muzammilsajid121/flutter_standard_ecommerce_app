@@ -8,6 +8,7 @@ import 'package:flutter_standard_ecommerce_app/features/personalization/screens/
 import 'package:flutter_standard_ecommerce_app/features/personalization/screens/profile/profile_menu.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/image_string.dart';
 import 'package:flutter_standard_ecommerce_app/utils/constants/sizes.dart';
+import 'package:flutter_standard_ecommerce_app/utils/shimmer/shimmer_effect.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -30,9 +31,19 @@ class ProfileScreen extends StatelessWidget {
                 width: double.infinity,
                 child: Column(
                   children: [
-                    TCicluarImage(image: TImages.user3, width: 80, height: 80,),
+                    //--- user image
+                    Obx( (){
+                      final networkImage = controller.user.value.profilePicture;
+                      final image = networkImage.isEmpty? networkImage : TImages.user3;
+
+                      //if image uploading show shimmer
+                      return controller.imageUploadingloader.value ?
+                      TShimmerEffect(width: 80, height: 80, radius: 80,) :
+                      TCicluarImage(image: image, width: 80, height: 80, isnetworkimage: networkImage.isNotEmpty,);
+                    } ),
+
                     SizedBox(height: TSizes.defaultSpaceBtwItem),
-                    TextButton(onPressed: () {},child: Text('Change profile picture')),
+                    TextButton(onPressed: ()=> controller.uploadUserProfilePicture(),child: Text('Change profile picture')),
                   ],
                 ),
               ),

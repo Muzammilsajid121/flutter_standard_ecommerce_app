@@ -80,7 +80,7 @@ Future<UserCredential> loginWithEmailAndPassword(String email, String password) 
   }
 }
 
-//--  [EmailAuthentication] - REGISTER
+//--  [EmailAuthentication] - REGISTER WITH EMAIL PASSWORD
 Future<UserCredential> registerWithEmailAndPassword(String email, String password) async {
   try {
     return await _auth.createUserWithEmailAndPassword(email: email, password: password);
